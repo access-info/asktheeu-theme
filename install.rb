@@ -4,6 +4,6 @@
 	full_path = File.expand_path(File.join(File.dirname(__FILE__), "public"))
 
 puts "======#{full_path}"
-puts "== #{config}"
+puts "== #{controller}"
 	# TODO: check for existence
 #	puts `ln -s #{full_path} ../../../public/asktheeu-theme-plugin`
