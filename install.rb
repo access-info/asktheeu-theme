@@ -3,7 +3,5 @@
 #if RAILS_MODE == 'developemnt' do 
 	full_path = File.expand_path(File.join(File.dirname(__FILE__), "public"))
 
-puts "======#{full_path}"
-puts "== #{controller}"
 	# TODO: check for existence
-#	puts `ln -s #{full_path} ../../../public/asktheeu-theme-plugin`
+	puts `ln -s #{full_path} ../../../public/asktheeu`
