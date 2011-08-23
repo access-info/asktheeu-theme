@@ -1,0 +1,7 @@
+<% if status == 'transferred' %>
+    <%= public_body_link(@info_request.public_body) %> has replied saying <strong>they have transferred your request to another public body</strong>.
+<% elsif status == 'referred' %>
+    <%= public_body_link(@info_request.public_body) %> has replied saying <strong>you have to contact another public body</strong>.
+<% else %>
+    <% raise "unknown status " + status %>
+<% end %>
