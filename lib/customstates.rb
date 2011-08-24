@@ -4,17 +4,6 @@ module InfoRequestCustomStates
         base.extend(ClassMethods)
     end
 
-    # Mixin methods for InfoRequest
-    def theme_display_status(status)
-        if status == 'referred'
-            _("Referred.")
-        elsif status == 'transferred'
-            _("Transferred.")
-        else
-            raise _("unknown status ") + status        
-        end
-    end
-
     def theme_calculate_status
         return 'waiting_classification' if self.awaiting_description
         waiting_response = self.described_state == "waiting_response" || self.described_state == "deadline_extended"
@@ -24,9 +13,20 @@ module InfoRequestCustomStates
         return 'waiting_response_overdue' if
             Time.now.strftime("%Y-%m-%d") > self.date_response_required_by.strftime("%Y-%m-%d")
         return 'waiting_response'
-    end        
+    end
 
+    # Mixin methods for InfoRequest
     module ClassMethods 
+        def theme_display_status(status)
+            if status == 'referred'
+                _("Referred.")
+            elsif status == 'transferred'
+                _("Transferred.")
+            else
+                raise _("unknown status ") + status        
+            end
+        end
+
         def theme_extra_states
             return ['referred',
                     'transferred']
