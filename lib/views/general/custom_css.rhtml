@@ -1,11 +1,25 @@
 body {
     font-family: Helvetica, Arial;
 }
+    body.front {
+        background: none;
+    }
+
+#wrapper {
+    padding-top: 10px;
+}
+
 
 /** HEADER **/ 
 #banner {
     background: #EAF5F6;
     border: none;
+    height: 150px;
+    position: relative;
+}
+
+#banner_inner {
+    width: 950px;
     height: 150px;
 }
 
@@ -54,6 +68,7 @@ div.lang {
     #topnav ul li {
         padding-left: 8px;
         padding-right: 8px;
+        margin-right: 10px;
 
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -63,42 +78,68 @@ div.lang {
     }
 
 
-
-
-
-
-/*
-<!-- 
-h1, h2, h3 {
-    color: #1B1C6A;
+/** MAIN SITE **/
+h1, h3 {
+    color: #009a9d;
 }
 
-#topnav ul li a,
-div.frontpage-box {
-    color: #1B1C6A !important;
+h2 {
+    color: #7bbb58;
 }
 
 
-div.frontpage-box,
-#stepwise_make_request {
-    background: url(/asktheeu-theme/images/stripes.png);
+/** FOOTER **/
+#footer {
+    height: 100px;
 }
 
-body {
-    font-family: Helvetica, Arial;
-    font-size: 13px;
+#footer-inner {
+    width: 950px;
+    margin: auto;
+    position: relative;
 }
 
-#banner_inner {
-    font-size: 14px;
+#access-info-logo {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+#footer-links {
+    margin-left: 150px;
+    margin-top: 10px;
+    float: left;
+
+    font-family: Helvetica, Arial;  /** Gotham **/
+    font-size: 18px;
     font-weight: bold;
 }
+    #footer-links ul {
+        list-style: none outside none;
+    }
+    #footer-links ul li {
+        float: left;
+        margin-right: 40px;
+    }
+    #footer-links ul a {
+        text-decoration: none;
+        color: #009a9d;
+    }
+    
+#credits {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
 
-div.lang {
-    top: 50px;
+    font-family: Helvetica, Arial;
+    font-size: 12px;
 }
+    #credits a {
+        text-decoration: none;
+        color: #00aaa6;
+    }
 
-#fancybox-content {
-    width: 910px;
-} -->
-*/
+#creative-commons-logo {
+    float: right;
+    margin-top: 20px;
+}
