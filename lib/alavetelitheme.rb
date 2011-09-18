@@ -16,3 +16,6 @@ if ENV["RAILS_ENV"] != "test"
       ActiveSupport::Dependencies.autoload_once_paths.delete(path)
     end
 end
+
+# Define custom controllers
+require "controllers/AskTheEUController.rb"
