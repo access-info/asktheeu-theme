@@ -1,6 +1,6 @@
-PublicBodyCategories.add(:en, [
+PublicBodyCategories.add(:es, [
     "Core EU bodies",
-        [ "european_comission", "European Comission", "European Comission" ],
+        [ "european_comission", "Comisión Europea", "European Comission" ],
     "Executive Agencies",
         [ "environment", "Environment", "an environmental agency" ], 
         [ "security_and_defence", "Common Security and Defence", "a security and defence agency" ], 
