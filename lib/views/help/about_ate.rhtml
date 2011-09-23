@@ -1,7 +1,9 @@
 <% @title = "About" %>
 
-<div id="right_column_flip">
-    <h2>About</h2>
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>About</h1>
     <h3><a href="#welcome">Welcome to AsktheEU.org!</a></h3>
     <h3><a href="#how">How Does It Work?</a></h3>
     <h3><a href="#who">Who built AsktheEU.org?</a></h3>
@@ -12,9 +14,7 @@
     <p>If your question isn't answered here, or you just wanted to let us know
     something about the site, <a href="/help/contact">contact&nbsp;us</a>.
     </p>
-</div>
 
-<div id="left_column_flip">
     <h2 id="welcome">Welcome to AsktheEU.org!</h2>
     <p>This website has been built by civil society organizations to help members of the public like you get the information you want about the European Union – by asking for it. </p>
     <p>This website will also make life easier for EU public officials because they will be less likely to have to answer repeated requests about the same subject: once a question has been answered everyone will be able to find the information stored on this website.</p>
