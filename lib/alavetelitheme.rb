@@ -17,3 +17,6 @@ end
 
 # Monkey patch app code
 require 'controller_patches.rb'
+
+# Plug theme-specific locale strings
+require 'gettext_setup.rb'
