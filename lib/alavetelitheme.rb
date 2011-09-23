@@ -15,5 +15,5 @@ end
   ActiveSupport::Dependencies.autoload_once_paths.delete(path)
 end
 
-# Define custom controllers
-require "controllers/AskTheEUController.rb"
+# Monkey patch app code
+require 'controller_patches.rb'
