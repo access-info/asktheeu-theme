@@ -23,7 +23,7 @@ PublicBodyCategories.add(:en, [
         [ "executive_agency", "Executive Agencies", "an Executive agency"],
         [ "financial_supervisory", "Financial supervisory bodies", "a financial supervisory body"],
         [ "euratom", "EURATOM Agencies and bodies", "an EURATOM agency"],
-        [ "other", "Other bodies", ""],
+        [ "other", "Other bodies", " "],
     "Member States",
         [ "permanent_representative", "Permanent Representatives of Member States to the EU", "a permanent representative of a member state to the EU"]
 ])
