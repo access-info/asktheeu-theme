@@ -1,8 +1,14 @@
 class ActionController::Base
     before_filter :set_view_paths
 
-    def set_view_paths         
-        self.prepend_view_path File.join(File.dirname(__FILE__), "views")
+    def set_view_paths
+        path = File.join(File.dirname(__FILE__), "views")
+        self.prepend_view_path(path)
+        
+        # XXX: Move to dispatcher?
+        # Override mailer templates with theme ones. Unshifting the theme path would keep 
+        # inserting the theme path again and again so we set the paths we want instead.
+        ActionMailer::Base.view_paths = ActionView::Base.process_view_paths([path, 'app/views'])
     end
 end
 
