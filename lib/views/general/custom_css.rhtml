@@ -4,14 +4,38 @@
 /** LAYOUT **/
 body {
     font-family: Verdana, Helvetica, Arial;
+    font-size: 12px;
+    line-height: 1.5;
 }
     body.front {
         background: none;
     }
 
+#content {
+    width: 960px;
+    padding: 0px;
+    margin: auto;
+}
+
 #wrapper {
     padding-top: 10px;
     margin-bottom: 50px;
+    width: 960px;
+}
+
+#main_content {
+    padding: 0 60px;
+}
+
+#header_right {
+    width: 180px;
+    float: left;
+}
+
+#header_left {
+    width: 600px;
+    float: right;
+    padding: 30px;
 }
 
 
@@ -24,7 +48,7 @@ body {
 }
 
 #banner_inner {
-    width: 950px;
+    width: 960px;
     height: 150px;
 }
     #banner_inner a:hover {
@@ -72,7 +96,7 @@ div.lang {
     font-family: Helvetica, Arial;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 190px;
+    float: right;
 }
     #topnav ul li {
         padding-left: 8px;
@@ -113,15 +137,24 @@ h3, h3 a {
 
 /** HELP **/
 #left_column_flip {
-    margin-top: 20px;
-    width: 550px;
-    margin-right: 40px;
+    margin-top: 10px;
+    padding-left: 30px;
+    margin-right: 30px;
+    width: 660px;
 }
 
 #right_column_flip {
-    text-align: right;
+    text-align: left;
     width: 240px;
+    margin-top: 32px;
 }
+    #right_column_flip h3 {
+        margin-bottom: 0px;
+    }
+    #right_column_flip ul {
+        margin-top: 0px;
+        list-style: none outside none;
+    }
 
 .controller_help {
     font-size: 12px;
@@ -150,7 +183,7 @@ h3, h3 a {
 }
 
 #frontpage-intro {
-    width: 950px;
+    width: 960px;
     margin: auto;
     position: relative;
 }
@@ -270,7 +303,7 @@ h3, h3 a {
 }
 
 #frontpage-inner-content {
-    width: 950px;
+    width: 960px;
     margin: auto;
     position: relative;
     padding-bottom: 20px;
@@ -352,12 +385,98 @@ h3, h3 a {
     }
 
 
-/** PUBLIC BODY LISTING **/
+/** GENERAL **/
+.request_listing span.head a, 
+.user_listing span.head a, 
+.body_listing span.head a {
+    font-family: 'Open Sans', Helvetica, Arial;
+    font-size: 16px;
+    color: #009A9D;
+}
+
+a,
+.request_listing a, 
+.body_listing a, 
+.user_listing a {
+    color: #009A9D;
+    text-decoration: none !important;
+}
+    a:hover,
+    .request_listing a:hover, 
+    .body_listing a:hover, 
+    .user_listing a:hover {
+        text-decoration: underline !important;
+    }
+
+#header_left p {
+    padding-right: 120px;
+}
+
+.request_left {
+    width: 600px;
+}
+
+.request_right {
+    width: 240px;
+}
+
+
+/** REQUEST **/
+p.subtitle {
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 15px;
+    color: #444444; /* XXX */
+}
+
+p.public-body-name-prefix {
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: -25px;
+    color: #444444; /* XXX */
+}
+
+#stepwise_make_request {
+    background: none;
+    width: 480px;
+    margin-bottom: 10px;
+
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 16px;
+    color: #444444; /* XXX */
+}
+    #stepwise_make_request strong {
+        color: #009A9D;
+    }
+
+h2.foi_results {
+    width: 480px;
+    padding-bottom: 0px;
+}
+
+#foi_results_section {
+    padding-left: 210px;
+    padding-right: 120px;
+}
+
+.request_listing {
+    margin-right: -210px;
+}
+
+    .request_left {
+        width: 480px;
+    }
+    .request_right {
+        width: 210px;
+    }
+    .request_listing span.desc {
+        background: none;
+    }
+
 .date_added {
     display: none;
 }
 
-/** REQUEST **/
 #request_header {
     background: none;
 }
@@ -380,6 +499,7 @@ h3, h3 a {
     width: 500px;
 }
 
+
 /** MODAL SIGN-IN **/
 #signin-successful,
 #signin-successful a {
@@ -399,6 +519,7 @@ h3, h3 a {
     text-align: left;
 }
 
+
 /** FOOTER **/
 #footer {
     height: 90px;
@@ -407,7 +528,7 @@ h3, h3 a {
 }
 
 #footer-inner {
-    width: 950px;
+    width: 960px;
     margin: auto;
     position: relative;
 }
