@@ -7,6 +7,17 @@
 require 'dispatcher'
 Dispatcher.to_prepare do
     GeneralController.class_eval do
+        alias old_blog blog
+        
+        def blog
+            begin
+                old_blog
+            rescue
+                @blog_items = []
+                @twitter_user = MySociety::Config.get('TWITTER_USERNAME', '')
+            end
+        end
+        
         def frontpage
             blog
         end
