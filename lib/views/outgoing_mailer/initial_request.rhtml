@@ -1,0 +1,16 @@
+<%= @outgoing_message.body.strip %>
+
+-------------------------------------------------------------------
+
+<%= _('This is a request for access to information under Article 15 of the TFEU and, where
+applicable, Regulation 1049/2001 which has been sent via the {{site_name}} website.',
+:site_name => site_name) %>
+
+<%= _('Please kindly use this e-mail address for all replies to this request:')%>
+<%= @info_request.incoming_email %>
+
+<%= _('If {{email_address}} is the wrong address for {{type_of_request}} requests to {{public_body_name}}, please tell the {{site_name}} team on e-mail team@asktheEU.org', :email_address => @info_request.public_body.request_email, :public_body_name => @info_request.public_body.name)%>
+
+<%= render :partial => 'followup_footer' %>
+
+-------------------------------------------------------------------
