@@ -6,9 +6,10 @@
 #
 require 'dispatcher'
 Dispatcher.to_prepare do
+    # Front page needs some additional info
     GeneralController.class_eval do
+        # Make sure it doesn't break if blog is not available
         alias old_blog blog
-        
         def blog
             begin
                 old_blog
@@ -20,6 +21,13 @@ Dispatcher.to_prepare do
         
         def frontpage
             blog
+        end
+    end
+
+    PublicBodyController.class_eval do
+        def index
+            @public_bodies = PublicBody.paginate([], :page => 10)
+            render :template => "public_body/list"
         end
     end
 end
