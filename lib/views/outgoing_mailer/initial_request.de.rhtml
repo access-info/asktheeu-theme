@@ -1,0 +1,13 @@
+<%= @outgoing_message.body.strip %>
+
+-------------------------------------------------------------------
+
+<%= _('"Dies ist eine Anfrage auf Dokumentenzugangs unter Artikel 15 des Vertrags über die Arbeitsweise der Europäischen Union (AEUV) und, wo zutreffend, Verordnung 1049/2001 welche über die Internetsetite {{site_name}} gesendet wurde.', :site_name => site_name) %>
+
+<%= _('Bitte verwendet Sie dies Email-Adresse für alle Antworten zu folgender Anfrage: {{email}}', :email => @info_request.incoming_email) %>
+
+<%= _('Falls {{email_address}} die falsche Email-Adresse für Anfragen auf Dokumentenzugangs an {{public_body_name}} ist, teilen Sie dies dem {{site_name}} team bitte durch eine Email an team@asktheEU.org mit.', :email_address => @info_request.public_body.request_email, :public_body_name => @info_request.public_body.name, :site_name => site_name)%>
+
+<%= render :partial => 'followup_footer' %>
+
+-------------------------------------------------------------------
