@@ -8,10 +8,10 @@ require 'dispatcher'
 Dispatcher.to_prepare do
     InfoRequest.class_eval do
         def law_used_full
-            "access to information/documents"
+            "access to information"
         end
         def law_used_short
-            "information/documents"
+            "information"
         end
     end
 end
