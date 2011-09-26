@@ -1,9 +1,45 @@
 <div id="right_column_flip">
     <h2>Help pages</h2>
+    
+    <h3><%= link_to_unless_current "About", "/help/about_ate" %></h3>
     <ul class="no_bullets">
-        <li><%= link_to_unless_current "About", "/help/about_ate" %></li>
-        <li><%= link_to_unless_current "Request Guide", "/help/guide" %></li>
+        <li><%= link_to_unless_current "How does AsktheEU.org work?", "/help/about_ate" %></li>
+        <li>Who built AsktheEU.org?</li>
+    </ul>
+    
+    <h3>Can I help out?</h3>
+    <ul></ul>
+    
+    <h3><%= link_to_unless_current "Request Guide", "/help/guide" %></h3>
+    <ul class="no_bullets">
+        <li>Making Requests</li>
+        <li>Finding EU bodies</li>
+        <li>Which languages?</li>
+        <li>Effective request tips </li>
+        <li>Responses &amp; Appeals </li>
+        <li>Request Moderation</li>
+    </ul>
+    
+    <h3>Your Right to Know</h3>
+        
+    <h3>Your privacy</h3>
+    
+    <h3>Information for EU Officials</h3>
+    <ul class="no_bullets">
+        <li>What is AsktheEU.org</li>
+        <li>Processing Requests</li>
+        <li>Privacy Issues</li>
+    </ul>
 
+    <h3>About the Software</h3>
+    
+    <h3>Programmers API</h3>
+    
+    <h3>Credits</h3>
+
+
+
+    <!-- <ul>
         <li><%= link_to_unless_current "Introduction", "/help/about" %></li>
         <li><%= link_to_unless_current "Making requests", "/help/requesting" %></li>
         <li><%= link_to_unless_current "Your privacy", "/help/privacy" %></li>
@@ -12,7 +48,7 @@
         <li><%= link_to_unless_current "Credits", "/help/credits" %></li>
         <li><%= link_to_unless_current "Programmers API", "/help/api" %></li>
         <li><%= link_to_unless_current "Advanced search", "/search" %></li>
-    </ul>
+    </ul> -->
 
     <h2 id="contact">Contact us</h2>
     <p>If your question isn't answered here, or you just wanted to let us know
