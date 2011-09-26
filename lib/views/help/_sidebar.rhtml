@@ -7,16 +7,16 @@
         <li><%= link_to "Who built AsktheEU.org?", help_about_path(:anchor => 'who') %></li>
     </ul>
     
-    <h3><%= link_to_unless_current "Can I help out?", help_contact_path %></h3>
+    <h3><%= link_to_unless_current "Can I help out?", help_help_out_path %></h3>
     
     <h3><%= link_to_unless_current "Request Guide", help_guide_path %></h3>
     <ul class="no_bullets">
-        <li><%= link_to "Making Requests", help_guide_path(:anchor => '1') %></li>
-        <li><%= link_to "Finding EU bodies", help_guide_path(:anchor => '5') %></li>
-        <li><%= link_to "Which languages?", help_guide_path(:anchor => '6') %></li>
-        <li><%= link_to "Effective request tips", help_guide_path(:anchor => '7') %></li>
-        <li><%= link_to "Responses &amp; Appeals", help_guide_path(:anchor => '10') %></li>
-        <li><%= link_to "Request Moderation", help_guide_path(:anchor => '17') %></li>
+        <li><%= link_to "Making Requests", help_guide_path(:anchor => 'making_requests') %></li>
+        <li><%= link_to "Finding EU bodies", help_guide_path(:anchor => 'finding_bodies') %></li>
+        <li><%= link_to "Which languages?", help_guide_path(:anchor => 'languages') %></li>
+        <li><%= link_to "Effective request tips", help_guide_path(:anchor => 'tips') %></li>
+        <li><%= link_to "Responses &amp; Appeals", help_guide_path(:anchor => 'answers_appeals') %></li>
+        <li><%= link_to "Request Moderation", help_guide_path(:anchor => 'request_moderation') %></li>
     </ul>
     
     <h3><%= link_to_unless_current "Your Right to Know", help_right_to_know_path %></h3>
@@ -25,9 +25,9 @@
     
     <h3><%= link_to_unless_current "Information for EU Officials", help_officers_path %></h3>
     <ul class="no_bullets">
-        <li><%= link_to "What is AsktheEU.org", help_officers_path(:anchor => 'about') %></li>
-        <li><%= link_to "Processing Requests", help_officers_path(:anchor => 'requests') %></li>
-        <li><%= link_to "Privacy Issues", help_officers_path(:anchor => 'privacy') %></li>
+        <li><%= link_to "What is AsktheEU.org?", help_officers_path(:anchor => 'what') %></li>
+        <li><%= link_to "Processing Requests", help_officers_path(:anchor => 'processing_requests') %></li>
+        <li><%= link_to "Privacy Issues", help_officers_path(:anchor => 'privacy_issues') %></li>
     </ul>
 
     <h3></h3>
