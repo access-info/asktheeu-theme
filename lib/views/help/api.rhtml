@@ -12,9 +12,11 @@
     </dd>
 
     <h2>Linking to new requests</h2>
-      <p>To encourage your users to make links to a particular public authority, use URLs of the form <span class="XXX">
-      <%= link_to new_request_to_body_url(:url_name => "liverpool_city_council") , new_request_to_body_url(:url_name => "liverpool_city_council") %></span>. 
-      These are the parameters you can add to those URLs, either in the URL or from a form.
+      <p>To encourage your users to make links to a particular public authority, use URLs of the form:</p>
+      <blockquote>
+      <%= link_to new_request_to_body_url(:url_name => "european_central_bank") , new_request_to_body_url(:url_name => "european_central_bank") %>
+      </blockquote>
+      <p>These are the parameters you can add to those URLs, either in the URL or from a form.
 
       <ul>
           <li> <strong>title</strong> - default summary of the new request.</li>
@@ -35,8 +37,8 @@
 
       <p>In particular, even complicated search queries have Atom feeds.
       You can do all sorts of things with them, such as query by authority, by file
-      type, by date range, or by status. See the <span class="XXX"><a href="/search">advanced search
-      tips</a></span> for details.
+      type, by date range, or by status. See the <%= link_to 'advanced search tips', advanced_search_path %>
+      for details.
     </dd>
 
     <h2>JSON structured data</h2>

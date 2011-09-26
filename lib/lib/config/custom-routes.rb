@@ -3,7 +3,6 @@ if ENV["RAILS_ENV"] != "test"
         # Additional help pages
         map.with_options :controller => 'help' do |help|
             help.help_help_out '/help/help_out', :action => 'help_out'
-            help.help_guide '/help/guide', :action => 'guide'
             help.help_right_to_know '/help/right_to_know', :action => 'right_to_know'
         end
         

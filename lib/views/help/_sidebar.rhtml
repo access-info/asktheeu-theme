@@ -9,14 +9,14 @@
     
     <h3><%= link_to_unless_current "Can I help out?", help_help_out_path %></h3>
     
-    <h3><%= link_to_unless_current "Request Guide", help_guide_path %></h3>
+    <h3><%= link_to_unless_current "Request Guide", help_requesting_path %></h3>
     <ul class="no_bullets">
-        <li><%= link_to "Making Requests", help_guide_path(:anchor => 'making_requests') %></li>
-        <li><%= link_to "Finding EU bodies", help_guide_path(:anchor => 'finding_bodies') %></li>
-        <li><%= link_to "Which languages?", help_guide_path(:anchor => 'languages') %></li>
-        <li><%= link_to "Effective request tips", help_guide_path(:anchor => 'tips') %></li>
-        <li><%= link_to "Responses &amp; Appeals", help_guide_path(:anchor => 'answers_appeals') %></li>
-        <li><%= link_to "Request Moderation", help_guide_path(:anchor => 'request_moderation') %></li>
+        <li><%= link_to "Making Requests", help_requesting_path(:anchor => 'making_requests') %></li>
+        <li><%= link_to "Finding EU bodies", help_requesting_path(:anchor => 'finding_bodies') %></li>
+        <li><%= link_to "Which languages?", help_requesting_path(:anchor => 'languages') %></li>
+        <li><%= link_to "Effective request tips", help_requesting_path(:anchor => 'tips') %></li>
+        <li><%= link_to "Responses &amp; Appeals", help_requesting_path(:anchor => 'answers_appeals') %></li>
+        <li><%= link_to "Request Moderation", help_requesting_path(:anchor => 'request_moderation') %></li>
     </ul>
     
     <h3><%= link_to_unless_current "Your Right to Know", help_right_to_know_path %></h3>
@@ -39,7 +39,7 @@
 
     <h2 id="contact">Contact us</h2>
     <p>If your question isn't answered here, or you just wanted to let us know
-    something about the site, <a href="/help/contact">contact&nbsp;us</a>.
+    something about the site, <%= link_to 'contact us', help_contact_path %>.
     </p>
 </div>
 
