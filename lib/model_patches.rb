@@ -6,6 +6,7 @@
 #
 require 'dispatcher'
 Dispatcher.to_prepare do
+    # Remove UK-specific references to FOI
     InfoRequest.class_eval do
         def law_used_full
             "access to information"
@@ -15,12 +16,21 @@ Dispatcher.to_prepare do
         end
     end
     
+    # Add intro paragraph to new request template
     OutgoingMessage.class_eval do
         def default_letter
             _("Under the right of access to documents as enshrined in Article 15 on the " +
             "Treaty on the Functioning of the EU and Article 42 of the European Charter of " +
             "Fundamental Rights, and as developed in Regulation 1049/2001, I am requesting " +
             "documents which contain the following information:\n\n")
+        end
+    end
+    
+    # Disable funcionality to let users of the site act on behalf of the public
+    # body, since we aren't sure right now this is safe enough
+    PublicBody.class_eval do
+        def is_foi_officer?(user)
+            false
         end
     end
 end
