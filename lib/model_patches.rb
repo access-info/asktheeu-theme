@@ -14,4 +14,13 @@ Dispatcher.to_prepare do
             "information"
         end
     end
+    
+    OutgoingMessage.class_eval do
+        def default_letter
+            _("Under the right of access to documents as enshrined in Article 15 on the " +
+            "Treaty on the Functioning of the EU and Article 42 of the European Charter of " +
+            "Fundamental Rights, and as developed in Regulation 1049/2001, I am requesting " +
+            "documents which contain the following information:\n\n")
+        end
+    end
 end
