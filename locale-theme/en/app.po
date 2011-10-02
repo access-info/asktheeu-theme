@@ -10,3 +10,6 @@ msgstr ""
 msgid "Summary:"
 msgstr "Subject:"
 
+#: app/views/layouts/default.rhtml:15
+msgid "Make and browse Freedom of Information (FOI) requests"
+msgstr "Make and browse access to information requests"
