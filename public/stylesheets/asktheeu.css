@@ -35,6 +35,20 @@ body {
     padding: 20px 30px;
 }
 
+#everypage {
+    background-color: #666;
+    opacity: 0.95;
+    border-color: #FFF;
+    border-radius: 0;
+    border-left: none;
+    border-rigth: none;
+    left: 0;
+    width: 99%;
+    padding-right: 1%;
+    color: #EEE;
+    font-weight: bold;
+}
+
 
 /** HEADER **/ 
 #banner {

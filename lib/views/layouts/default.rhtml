@@ -82,16 +82,7 @@
         });
     </script>
     <% end %>
-        
-<% # code for popup advert for a campaign etc.
-=begin
-    <div id="everypage" class="jshide">
-    <p style="float:right"><a href="#top" onclick="$.cookie('seen_foi2', 1, { expires: 7, path: '/' }); $('#everypage').hide('slow'); return false;">Close</a></p>
-    [ message goes here ]
-    <p style="text-align: right"><a href="#top" onclick="$.cookie('seen_foi2', 1, { expires: 7, path: '/' }); $('#everypage').hide('slow'); return false;">Close</a></p>
-    </div>
-=end
-%>
+
 <div class="entirebody">
     <div id="banner">
       <div id="banner_inner">
@@ -114,6 +105,22 @@
           </div>
         <% end %>   
 
+        <% if I18n.locale != :en %>
+        <!-- XXX: Temporary warning about ongoing translation -->
+        <div id="everypage" class="jshide" style="display: none">
+            <p>The translations into Spanish and French are still ongoing and we are happy for anyone 
+                who can support us<br/>in order to make the site even more accessible. If you wish to help us, 
+                we are more than happy to hear from you.<br/>Please get in touch: 
+                <a href="mailto:team@asktheeu.org">team@asktheeu.org</a></p>
+            <p style="text-align: right"><a href="#top" onclick="$.cookie('seen_trans', 1, { expires: 7, path: '/' }); $('#everypage').hide('slow'); return false;">Close</a></p>
+        </div>
+        <script type="text/javascript">
+            if ( $.cookie('seen_trans') != 2 ) {
+                $('#everypage').show();
+            }
+        </script>
+        <% end %>
+        
         <div id="navigation_search">
             <% form_tag({:controller => "general", :action => "search_redirect"}, {:id => "navigation_search_form"}) do %>
                <p>
