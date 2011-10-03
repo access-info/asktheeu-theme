@@ -1,0 +1,85 @@
+<% @title = "Quiénes somos" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Quiénes somos</h1>
+    <h3><a href="#welcome">¡Bienvenido a AskTheEU.org!</a></h3>
+    <h3><a href="#how">¿Cómo funciona?</a></h3>
+    <h3><a href="#users">¿Quién puede utilizar AsktheEU.org?</a></h3>
+    <h3><a href="#who">¿Quién creó AsktheEU.org?</a></h3>
+    <h3><a href="#funders">¿Quién financia Ask the UE?</a></h3>
+    <h3><a href="#supporters">AsktheEU.org Supporters</a></h3>
+    <h3><a href="#ip">Propiedad Intelectual</a></h3>
+
+    <h2 id="welcome">¡Bienvenido a AskTheEU.org!</h2>
+    <p>Esta página ha sido diseñada por las organizaciones de la sociedad civil para ayudar a los ciudadanos como tú a obtener la información que precisan acerca de la Unión Europea - preguntando.</p>
+    <p>Esta página facilitará el trabajo de los funcionarios públicos puesto que no tendrán que responder varias veces a solicitudes sobre el mismo tema: una vez que se responda una pregunta, todo el mundo tendrá acceso a esa información publicada en la página web.</p>
+    
+    <h2 id="how">¿Cómo funciona?</h2>
+    <p>Es muy sencillo: presentas una solicitud para la UE a través de esta página. Nosotros a continuación enviamos un correo electrónico al organismo de la UE correspondiente. Ellos tienen la obligación de responder en un plazo de 15 días laborables (3 semanas aproximadamente).</p>
+    <p>En el momento en el que obtenemos una respuesta, te la enviamos y automáticamente la publicamos en nuestro portal. Debes indicar si estás o no satisfecho con la respuesta, si necesitas mayor información o si por el contrario quieres presentar un recurso o apelación.</p>
+    <p>De esta manera, todo el mundo podrá consultar la respuesta y no tienen que formular la misma pregunta de nuevo.</p>
+    
+    <h2 id="users">¿Quién puede utilizar AsktheEU.org?</h2>
+    <p>Cualquiera de los 500 millones de personas que viven en la Unión Europea (tanto ciudadanos como residentes) tienen el derecho legalmente garantizado a solicitar información a los organismos de la UE.</p>
+    <p>La gente que vive en países no pertenecientes a la UE pueden también solicitar información (únicamente no poseen el mismo derecho de apelar al Tribunal Europeo en caso de negativa). Sin embargo, es posible presentar una reclamación al Defensor del Pueblo Europeo, puesto que en la práctica, no hace distinción entre los demandantes que son ciudadanos de la EU y los que no lo son.</p>
+    <p>Las ONG y negocios (denominados personas jurídicas) pueden también realizar solicitudes de documentación. Si estás registrado en un país de la UE tienes también el derecho a apelar al Tribunal Europeo.</p>
+    <p>Esta página puede ser especialmente interesante si trabajas en una ONG, si eres periodista, formas parte de un grupo de ciudadanos locales, eres estudiante o profesor, abogado o empresario…. O si tan sólo tienes curiosidad por conocer más a cerca de la UE y su funcionamiento. <strong>No esperes más: ¡pregunta ya!</strong></p>
+    
+    <h2 id="who">¿Quién creó AsktheEU.org?</h2>
+    <p>AsktheEU.org es un proyecto de la organización internacional para los derechos humanos <a href="http://www.access-info.org/">Access Info Europe</a>, con sede en Madrid, y desarrollado mediante software por la organización <a href="http://www.mysociety.com/">mySociety</a>, en Londres.</p>
+    <p>Access Info Europe es una organización de derechos humanos sin ánimo de lucro registrada en España ante el Ministerio del Interior (referencia 587828) y ante el <a href="http://europa.eu/transparency-register/index_en.htm">registro de Transparencia de la Unión Europea</a> (referencia 49931835063-67).</p>
+    <p>El proyecto AsktheEU.org está apoyado por una <%= link_to 'coalición de organizaciones europeas e internacionales', help_credits_path %>.</p>
+    <p>AsktheEU.org se basa en la exitosa página británica de mySociety, <a href="http://WhatDoTheyKnow.com">WhatDoTheyKnow.com</a>. <a href="http://FragdenStaat.de">FragdenStaat.de</a> es una página parecida de Alemania.</p>  
+    <p>En España, Access-Info Europe tiene programado el lanzamiento de TuDerechoaSaber.es con otras organizaciones de la sociedad civil y grupos de tecnología por la transparencia.</p>
+    
+    <h2 id="funders"></h2>
+    <p>AsktheEU.org estaba financiado por la Fundación Open Society en su primera fase de desarrollo. Todavía necesitamos más fondos y voluntarios para que siga funcionando. <a href="http://www.access-info.org/en/support-us">¡Apóyanos!</a></p>
+
+    <h2 id="supporters">AsktheEU.org Supporters</h2>
+    <p>Las siguientes organizaciones forman parte del AsktheEU Advisory Group:
+        <ul>
+            <li>
+                <a href="http://www.ecas-citizens.eu/">ECAS – European Citizen Action Service</a><br/>
+                <a href="http://www.ecas-citizens.eu/"><img src="/asktheeu-theme/images/supporters/ECAS2.png"/></a>
+            </li>
+            <li>
+                <a href="http://europe.ifj.org/">EFJ</a><br/>
+                <a href="http://europe.ifj.org/"><img src="/asktheeu-theme/images/supporters/EuropeanFederationofJournalists.jpg"/></a>
+            </li>
+            <li>
+                <a href="http://eutransparency.org/">EUTransparency.org</a><br/>
+                <a href="http://eutransparency.org/"><img src="/asktheeu-theme/images/supporters/EUTransparencydotorg.png"/></a>
+            </li>
+            <li>
+                <a href="http://farmsubsidy.org/">Farm Subsidy</a><br/>
+                <a href="http://farmsubsidy.org/"><img src="/asktheeu-theme/images/supporters/farmsubsidydotorg2.png"/></a>
+            </li>
+            <li>
+                <a href="http://fishsubsidy.org/">Fish Subsidy</a><br/>
+                <a href="http://fishsubsidy.org/"><img src="/asktheeu-theme/images/supporters/fishsubsidydotorg.png"/></a>
+            </li>
+            <li>
+                <a href="http://fragdenstaat.de/">Frag den Staat</a><br/>
+                <a href="http://fragdenstaat.de/"><img src="/asktheeu-theme/images/supporters/fragdenstaat.png"/></a>
+            </li>
+            <li>
+                <a href="http://okfn.org/">Open Knowledge Foundation</a><br/>
+                <a href="http://okfn.org/"><img src="/asktheeu-theme/images/supporters/OpenKnowledgeFoundation.jpg"/></a>
+            </li>
+            <li>
+                <a href="http://www.regardscitoyens.org/">Regards Citoyens</a><br/>
+                <a href="http://www.regardscitoyens.org/"><img src="/asktheeu-theme/images/supporters/regards-citoyens.png"/></a>
+            </li>
+            <li>
+                <a href="http://www.statewatch.org/">Statewatch</a><br/>
+                <a href="http://www.statewatch.org/"><img src="/asktheeu-theme/images/supporters/Statewatch.png"/></a>
+            </li>
+        </ul>
+    </p>
+
+    <h2 id="ip">Intellectual Property</h2>
+    <p>Este sitio web forma parte del proyecto <a href="http://www.alaveteli.org/">Alaveteli</a> – un desarrollo de software libre gestionado por <a href="http://www.mysociety.org/">mySociety</a> en colaboración con <a href="http://www.access-info.org">Access Info Europe</a> y otras organizaciones de la sociedad civil. El otro contenido original del sitio web ha sido desarrollado por Access Info Europe y es público bajo <a href="http://creativecommons.org/licenses/by-sa/3.0/">licencia Creative Commons Reconocimiento-CompartirIgual 3.0 (CC-BY-SA 3.0)</a>.
+    </p>
+</div>
