@@ -13,3 +13,62 @@ msgstr "Subject:"
 #: app/views/layouts/default.rhtml:15
 msgid "Make and browse Freedom of Information (FOI) requests"
 msgstr "Make and browse access to information requests"
+
+msgid " - view and make Freedom of Information requests"
+msgstr " - view and make access to information requests"
+
+#: app/views/public_body/show.rhtml:26
+msgid "View FOI email address"
+msgstr "View contact email address"
+
+#: app/views/public_body/show.rhtml:30
+msgid "Freedom of information requests to"
+msgstr "Access to information requests to"
+
+#: app/views/public_body/show.rhtml:54
+msgid "Make a new <strong>Freedom of Information</strong> request to {{public_body}}"
+msgstr "Make a new <strong>access to information</strong> request to {{public_body}}"
+
+#: app/views/public_body/show.rhtml:76
+msgid "Freedom of Information requests made using this site"
+msgstr "Access to information requests made using this site"
+
+#: app/views/public_body/show.rhtml:77
+msgid "Nobody has made any Freedom of Information requests to {{public_body_name}} using this site yet."
+msgstr "Nobody has made any access to information requests to {{public_body_name}} using this site yet."
+
+#: app/views/public_body/show.rhtml:85
+msgid "Search within the %d Freedom of Information requests to %s"
+msgid_plural "Search within the %d Freedom of Information requests made to %s"
+msgstr[0] "Search within the %d access to information requests to %s"
+msgstr[1] "Search within the %d access to information requests made to %s"
+
+#: app/views/public_body/show.rhtml:87
+msgid "%d Freedom of Information request to %s"
+msgid_plural "%d Freedom of Information requests to %s"
+msgstr[0] "%d access to information request to %s"
+msgstr[1] "%d access to information requests to %s"
+
+#: app/views/public_body/show.rhtml:118
+msgid "Freedom of Information requests made"
+msgstr "Access to information requests made"
+
+#: app/views/public_body/show.rhtml:120
+msgid "The search index is currently offline, so we can't show the Freedom of Information requests that have been made to this authority."
+msgstr "The search index is currently offline, so we can't show the access to information requests that have been made to this authority."
+
+#: app/views/public_body/view_email.rhtml:3
+msgid "FOI email address for {{public_body}}"
+msgstr "Contact email address for {{public_body}}"
+
+#: app/views/public_body/view_email_captcha.rhtml:1
+msgid "View FOI email address for '{{public_body_name}}'"
+msgstr "View contact email address for '{{public_body_name}}'"
+
+#: app/views/public_body/view_email_captcha.rhtml:3
+msgid "View FOI email address for {{public_body_name}}"
+msgstr "View contact email address for {{public_body_name}}"
+
+#: app/views/public_body/view_email_captcha.rhtml:5
+msgid "To view the email address that we use to send FOI requests to {{public_body_name}}, please enter these words."
+msgstr "To view the email address that we use to send requests to {{public_body_name}}, please enter these words."
