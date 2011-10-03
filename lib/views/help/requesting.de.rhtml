@@ -1,0 +1,153 @@
+<% @title = "Anfragen-Leitfaden" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Anfragen-Leitfaden</h1>
+    <p>Hier lernen Sie, wie Sie eine Anfrage für EU-Dokumente stellen können. Wir beantworten einige häufig gestellte Fragen (FAQs) und bieten einige Tipps, wie Sie gute Anfragen stellen können, durch welche Sie auch die von Ihnen erwünschten Informationen erhalten.</p>
+
+    <h3><a href="#making_requests">Making Requests</a></h3>
+    <h3><a href="#finding_bodies">Finding EU bodies</a></h3>
+    <h3><a href="#languages">Which languages?</a></h3>
+    <h3><a href="#tips">Effective request tips</a></h3>
+    <h3><a href="#answers_appeals">Responses &amp; Appeals</a></h3>
+    <h3><a href="#request_moderation">Request Moderation</a></h3>
+
+    <h1 id="making_requests">Making Requests</h1>
+
+    <h2 id="1">1. Habe ich das Recht eine Anfrage zu stellen?</h2>
+    <p>Alle EU-Bürger und Ansässige haben das Recht auf Zugang zu EU-Dokumenten. Nicht-EU-Bürger und Ansässige können Informationen anfragen, aber keine Berufung vor dem Gerichtshof einlegen.</p>
+    <p>NROs, Firmen und andere ´juristische Personen´ können ebenfalls Dokumente anfragen, vorausgesetzt sie haben ein in einem der EU-Mitgliedsstaaten registriertes Büro.</p>
+
+    <h2 id="2">2. Wonach kann ich fragen?</h2>
+    <p>Der EU Vertrag* garantiert das Recht auf Zugang zu Dokumenten. Daher sollten Sie überlegen, welche Dokumente die von Ihnen gesuchten Informationen enthalten würden, wenn Sie Ihre Anfrage formulieren.</p>
+    <p>The right to access EU documents is guaranteed by the Treaty on the Functioning of the European Union (Article 15) and by the <a href="http://www.europarl.europa.eu/charter/default_en.htm">Charter of Fundamental Rights of the European Union</a> (Article 42). These provisions form the basis of Regulation 1049/2001 regarding access to Parliament, Council and Commission documents.</p> 
+    <p>When you formulate your request think what kind of documents will contain the information you are looking for, because public officials in the EU are technically not obliged to create a new document in response to a request.</p>
+    <p>The exception to this is environmental matters where requesters have a more extensive right to information, which is not limited only to “documents”.  This is because access to environmental information is covered by an additional legal regime, the <a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32003L0004:EN:NOT">Aarhus Directive</a> on public access to environmental information.</p>
+
+    <h2 id="3">3. Wen kann ich fragen?</h2>
+    <p>Sie haben das Recht Dokumente aller EU-Institutionen, -behörden, und -agenturen einzusehen. Diese sind gesetzlich verpflichtet Ihnen innerhalb von 15 Werktagen zu antworten.</p> 
+    <p>Dies betrifft also die Europäische Kommission, das Europaparlament und den Europarat. Für einige Institutionen trifft das Recht nur auf deren administrative Tätigkeiten zu.</p>
+    <p><%= link_to 'Klicken Sie hier, um eine vollständige Liste anzusehen.', list_public_bodies_default_path %>.</p>
+
+    <h2 id="4">4. Warum sollte ich die EU fragen?</h2>
+    <p>In einer gesunden Demokratie weiß die Bevölkerung was Ihre Regierungen tut.</p>
+    <p>Die Europäische Union ist ein integraler Teil der europäischen Regierungsstruktur. Sie hat zunehmenden Einfluss in allen Bereichen unseres täglichen Lebens und wir sollten wissen, was sie tut.</p>
+    <p>Der Vertrag über die Funktionsweise der Europäischen Union beinhaltet das Konzept der Offenheit und spricht von der Schaffung einer zunehmenden Vereinigung aller Europäer, in welcher Entscheidungen so offen und bürgernah wie möglich getroffen werden.</p>
+    <p>Momentan haben jedoch die wenigsten Menschen eine genaue Vorstellung davon was die EU wirklich tut. Es leben mehr als 500 Millionen Menschen in der EU, jedoch erhält die EU nur circa 10,000 Dokumentanfragen pro Jahr und somit lediglich einen Antrag pro 50,000 Menschen. Einige Informationen können natürlich über das Internet gefunden werden, doch dies ist nicht genug. Damit die Europäische Öffentlichkeit die EU Verantwortlich halten kann und an Entscheidungsprozessen teilhaben kann, brauchen wir mehr Informationen. </p> 
+    <p><strong>AsktheEU.org</strong> ist dazu da, der Öffentlichkeit zu helfen mehr über das Handeln der EU herauszufinden und für Sie nützliche Informationen zu beziehen, damit Sie diese aktiv in den öffentlichen Dialog einbringen und somit zu besseren Entscheidungen auf EU-Ebene beitragen können.</p>
+
+    <h1 id="finding_bodies">Finding EU Bodies</h1>
+
+    <h2 id="5">5. Was wenn ich nicht weiß welche Behörde ich fragen soll?</h2>
+    <p>Sollten Sie Fragen haben, jedoch nicht genau wissen welche Behörde die entsprechende Information besitzt, versuchen Sie Folgendes:</p>
+    <ul>
+        <li>Suchen Sie auf AsktheEU.org nach Anfragen, welche Ihrer Ähnlich sind.</li>
+        <li>Lesen die die Beschreibungen aller Institutionen, um herauszufinden was diese jeweils tun.</li>
+        <li>Wenn Sie eine eventuell passende Institution gefunden haben, verwenden Sie den ´homepage´ link auf der rechten Seite, um die entsprechende Internetseite zu überprüfen.</li>
+        <li>Machen Sie sich keine zu großen Sorgen darum die richtige Institution zu finden. Falls Sie die falsche treffen, sollte diese Ihnen mitteilen, wen Sie fragen sollten. </li>
+        <li>Falls Sie sich noch nicht sicher bin, <a href="<%= help_contact_url %>">setzen Sie sich für Unterstützung mit uns</a> in Verbindung.</li>
+    </ul>
+
+    <h1 id="languages">Languages</h1>
+
+    <h2 id="6">6. Welche Sprachen kann ich verwenden?</h2>
+    <p>Sie haben das Recht Ihre Anfrage in allen 23 offizielle EU-Sprachen zu stellen: Bulgarisch, tschechisch, dänisch, niederländisch, englisch, estnisch, finnisch, französisch, deutsch, griechisch, ungarisch, irisch, italienisch, lettisch, litauisch, maltesisch, polnisch, portugiesisch, romanisch, slowakisch, slowenisch, spanisch und schwedisch.</p>
+    <p>Die EU sagt <q>Aufgrund zeitlicher und finanzieller Einschränkungen werden jedoch nur relativ wenige Arbeitsunterlagen in alle Sprachen übersetzt. So verwendet die Europäische Kommission in der Regel Englisch, Französisch und Deutsch als Verfahrenssprachen, wohingegen das Europäische Parlament je nach Bedarf seiner Mitglieder Übersetzungen in verschiedenen Sprachen bereitstellt.</q></p>
+    <p>Für AsktheEU.org bieten wir momentan Unterstützung in den vier meistgesprochenen Sprachen an: <strong>Englisch</strong>, <strong>Französisch</strong>, <strong>Deutsch</strong> und <strong>Spanisch</strong>. Wenn Sie uns als freiwillige/r Übersetzer/in unterstützen möchten diese Liste zu erweitern und Antworten in weitere Sprachen zu übersetzen, schreiben Sie uns: <a href="mailto:team@asktheeu.org">team@asktheeu.org</a>.</p>
+
+    <h1 id="tips">Tips for Requests</h1>
+    
+    <h2 id="focused">7. Was macht eine gute Anfrage aus?</h2>
+    <p>Bitte fügen Sie Ihrer Anfrage ausschließlich Informationen bei, welche es dem Empfänger vereinfachen die Dokumente mit den von Ihnen gewünschten Informationen zu identifizieren.</p>
+    <p>Kurzum, knappe und bündige Nachrichten erleichtern es dem entsprechenden EU Beamten die von Ihnen gewünschten Informationen zu identifizieren und somit werden Sie Ihre Antwort auch schneller erhalten.</p>
+    <p>Eine gut formulierte Anfrage macht es auch unwahrscheinlicher, dass ein Beamter Ihre Anfrage aufgrund von unklarer Formulierung oder dergleichen ablehnen kann. Aber machen Sie sich keine zu großen Sorgen, Ihre Anfrage muss nicht perfekt sein, Ihr EU-Kontakt sollte sich im Falle eventuellem Klärungsbedarfs an Sie wenden.</p> 
+    <p>Folgende Aspekte sollten Ihrer Anfrage nicht beigefügt werden:</p>
+    <ul>
+        <li>Erörterungen zu einem spezifischen Fall oder Rechtsstreit;</li>
+        <li>Äußerungen, welche andere diffamieren oder beleidigen könnten;</li>
+        <li>Angreifende Sprachwahl.</li>
+    </ul>
+    <p>Falls Sie dies doch tun sollten, müssen wir Ihre Anfrage entfernen. Wir werden Sie in einem solchen Falle informieren und sind jederzeit bereit über jeden Fall zu sprechen.</p>
+    
+    <h2 id="data_protection">8. Can I ask for information about myself?</h2>
+    <p>Sie sollten AsktheEU.org nicht nutzen, um private Informationen zu Ihrer Person zu beziehen. Falls Sie Informationen zu Ihrer Person anfragen, nutzen Sie die EU Datenschutzrichtlinien. <a href="http://www.edps.europa.eu/EDPSWEB/">Klicken Sie hier für weitere Infos.</a></p>
+
+    <h2>9. Warum beinhaltet das Anfrageformular den Zusatz über Dokumentanfragen?</h2>
+    <p>Auf EU-Ebene besteht eher das Recht auf Zugang zu Dokumenten, als zu Informationen. Das macht keinen wesentlichen Unterschied, aber wir fügen den Absatz über Dokumente hinzu, da Ihre Anfrage ansonsten evtl. unter dem Europäischen Kodex für gute Verhaltenspraxis abgewickelt werden könnte, welcher jedoch nicht die gleichen Fristen und Beschwerdemöglichkeiten mit sich bringt.</p>
+
+    <h2>10. Kann ich dieselbe Anfrage an mehrere Behörden senden?</h2>
+    <p>Sie können dieselben Dokumente von mehr als einer Institution anfragen. Wir empfehlen Ihnen jedoch mit der zu beginnen, welche über die von Ihnen benötigten Informationen am wahrscheinlichsten verfügt.</p>
+    <p>Sollte diese Institution nicht über alle relevanten Dokumente verfügen, so sollte diese Sie an entsprechende Institution weiterleiten.</p>
+    <p>Momentan gibt es auf dieser Seite noch kein automatisches System, um eine Anfrage an eine andere Behörde weiterzuleiten. Sie müssen diese dann manuell kopieren und einfügen.</p>
+
+    <h1 id="answers_appeals">Answers &amp; Appeals</h1>
+
+    <h2>11. Muss ich dafür bezahlen?</h2>
+    <p>Eine Dokumentenanfrage zu stellen ist generell kostenlos.</p> 
+    <p>Informationen in elektronischem Format zu erhalten ist auch generell kostenlos.</p>
+    <p>EU-Institutionen können “für die Anfertigung und Übersendung von Kopien” (Verordnung 1049/2001) Kosten erheben. Sie werden jedoch in diesem Falle vorab informiert und müssen sich somit keinerlei Sorgen machen. Stellen Sie mit ruhigem Gewissen jetzt Ihre Anfrage!</p>
+
+    <h2 id="quickly_response">12. Wann erhalte ich eine Antwort?</h2>
+    <p>EU-Institutionen sollten innerhalb von <strong>15 Werktagen</strong> auf Ihren Anfrage reagieren (ca. 3 Wochen oder etwas länger, im Falle von Feiertagen).</p> 
+    <p>Vor der endgültigen Antwort erhalten Sie evtl. bereits eine Bestätigung.</p>
+    <p>Die Antwort kann sowohl die gewünschten Dokumente enthalten, als auch eine Ablehnung oder andersartige Rückmeldung.</p>
+    <p>In Ausnahmefällen, falls Sie beispielsweise eine  große Anzahl von Dokumenten anfragen, kann eine Verlängerungsfrist der Beantwortung Ihrer Anfrage greifen. Die AsktheEU.org Internetseite wird dies im Auge behalten.</p>
+
+    <h2>13. Was passiert wenn ich keine Antwort erhalte?</h2>
+    <p>AsktheEU.org sendet Ihnen eine Email, falls Sie keine pünktliche Antwort erhalten. Sie können der Behörde dann eine Nachricht senden und Sie erinnern, dass Sie verpflichtet sind Ihnen innerhalb von 15 Tagen zu antworten.</p>
+    <p>Sollten Sie noch immer keine Antwort erhalten, sollten Sie eine Beschwerde einreichen.</p>
+
+    <h2>14. Was wenn ich eine Antwort erhalte, aber damit nicht zufrieden bin?</h2>
+    <p>Es gibt unterschiedliche Gründe, warum Sie von einer Antwort enttäuscht sein könnten:</p>
+    <ul>
+        <li>Sie haben nur einen Teil der von Ihnen angefragten Informationen erhalten (jedoch keine offizielle Ablehnung) oder die erhaltene Antwort bezieht sich nicht wirklich auf Ihre Frage. Dies nennt sich dann eine 'unvollständige Antwort';</li>
+        <li>Man teilt Ihnen mit, dass die Informationen bei dieser Institution 'nicht verfügbar' sind;</li>
+        <li>Ihnen wird teilweise Zugang gewährt, ein Teil der Information wird jedoch aus Ausnahmegründen der EU Verordnung 1049/2001 zurückgehalten (siehe auch <a href="#14">Punkt 14</a>);</li>
+        <li>Ihnen wurde der Zugang zu allen angefragten Informationen verweigert (siehe auch <a href="#14">Punkt 14</a>);</li>
+        <li>	Sie erhalten überhaupt keine Antwort ('Schweigen der Verwaltung' oder 'stumme Ablehnung').</li>
+    </ul>
+    <p>Sie können Ihre Antwort einer Liste von Kategorien zuordnen. Falls Sie sich nicht sicher sind wie dies funktioniert, helfen wir Ihnen gerne.</p>
+    <p>Falls Sie finden, dass die Antwort in irgendeiner Weise falsch war, können Sie eine Beschwerde einreichen. Diese wird formell 'Zweitantrag' genannt. Siehe auch <a href="#15">Punkt 15</a> für nähere Information.</p>
+    <p>If you think your complaint was badly handled, or you were treated rudely, you can file a complaint with the European Ombudsman.</p>
+
+    <h2>15. Was wären mögliche Gründe die Beantwortung meiner Anfrage abzulehnen?</h2>
+    <p>Die EU Regelungen für Dokumentenzugang basieren auf Richtlinie 1049/2001 und beinhalten eine Anzahl von Gründen warum gewisse Informationen nicht bereitgestellt werden.</p> 
+    <p>Bekannt als 'Ausnahmen', bestehen diese Gründe zum Schutz der Privatsphäre und spezifische öffentliche Interessen/Staatsinteressen. Die Liste beinhaltet:</p> 
+    <ul>
+        <li>Öffentliche Sicherheit,</li>
+        <li>Verteidigung und Militärangelegenheiten,</li>
+        <li>Internationale Beziehungen,</li>
+        <li>Finanz-, Währungs- oder Wirtschaftsrichtlinien der Gemeinschaft oder eines Mitgliedsstaates,</li>
+        <li>Handelsinteressen einer natürlichen- oder juristischen Person, inklusive geistigen Eigentums,</li>
+        <li>Gerichtsverfahren und Rechtsauskunft/Rechtsberatung,</li>
+        <li>Absicht von Inspektionen, Investigationen und Revisionen,</li>
+        <li>Entscheidungsprozesse.</li>
+    </ul>
+    <p>Diese Ausnahmen sollten eingeschränkt angewendet werden und ausschließlich eingesetzt, wenn eine dieser Interessenverletzt werden könnten. In vielen Fällen sollte die EU auch die potentielle Relevanz der Informationen für die Öffentlichkeit berücksichtigen.</p>
+    <p>Sollten Ihren Informationen auf Basis dieser Ausnahmen vorbehalten werden, wird Access Info Europe Sie beraten können, ob bei Ihnen ein guter Fall für eine Beschwerde vorliegt.</p>
+
+    <h2>16. Beschwerden: Zweitantrag</h2>
+    <p>Sollten Sie mit der Beantwortung Ihrer Anfrage unzufrieden sein, können Sie eine Beschwerde an die nächsthöhere Administrationsebene des Entscheidungsprozesses einreichen. Dieser Schritt nennt sich auch Zweitantrag, durch welchen die EU im Grunde gebeten wird Ihre Entscheidung Ihre Anfrage abzulehnen nochmals zu überdenken.</p>
+    <p>Der Versuch einer Beschwerde lohnt sich, da er häufig zur Freigabe weiterer Informationen führt, oft sogar der Freigabe aller Informationen.</p>
+    <p>Wenn Sie sich entscheiden die Beschwerde einzureichen, werden sie weitere, detaillierte Unterstützung erhalten und Access Info Europe kann Ihnen bei der Formulierung Ihres Zweitantrags behilflich sein.</p>
+
+    <h2>17. Kann ich die erhaltenen Informationen weiterverwenden?</h2>
+    <p>Generell sind durch EU-Institutionen erstellte Dokumente ´öffentlich´ im Sinne, dass sie der Öffentlichkeit gehören, da sie für uns erstellt wurden - finanziert von europäischen Steuergeldern. Daher sollten Sie die erhaltenen Dokumente und darin enthaltenen Informationen frei nutzen können.</p>
+    <p>Im Zweifelsfall, vor allem falls Sie die Materialien für kommerzielle Zwecke einsetzen wollen, fragen Sie die EU-Institution von welcher Sie die Dokumente erhalten.</p>
+
+    <h1 id="request_moderation">Request Moderation</h1>
+
+    <h2>18. Wie werden Anfragen und Kommentare moderiert?</h2>
+    <p>Wir ermutigen die Öffentlichkeit Anfragen zu stellen und wir ermöglichen Ihnen und andere Anfragen zu kommentieren.</p> 
+    <p>Unser Team aus festen Mitarbeitern und Freiwilligen wird den Inhalt regelmäßig überprüfen und wir behalten uns das Recht vor unangemessene Aussagen zu entfernen. Damit beziehen wir uns auf anstößige oder beleidigende Aussagen.</p> 
+    <p>Sie können derartige Inhalte auch selbst an uns weiterleiten.</p>
+
+    <h2>19. Kann ich meine Anfrage vertraut behandeln, bis ich meine Story-meine Artikel veröffentlicht habe?</h2>
+    <p>AskTheEU.org ist für öffentliche Anfragen gestaltet. Alle eingehenden Antworten werden automatisch auf der Internetseite für jedermann lesbar veröffentlicht.</p> 
+    <p>Wenn Sie ein/e Journalist/in, eine NRO oder andere Person sind, welche die Antwort privat halten möchte, bis Sie z.B. Ihren Artikel veröffentlicht haben, sollten Sie diese Internetseite lieber nicht benutzen, sondern Ihre Anfrage direkt an die entsprechende EU-Institution senden.</p>
+
+    <h2>20. Ich habe die Antwort auf ein Anfrage, welche ich direkt von einer EU-Institution angefragt hatte. Kann ich diese auch auf diese Seite stellen?</h2>
+    <p>Es tut uns leid, aber das ist nicht möglich. AsktheEU.org ist ein Anfragen-Archiv, welches durch die Seite erstellt wird und versucht nicht ein Archiv aller IFG-Anfragen zu sein. Das Hochladen anderer Anfragen wird von der Seite nicht unterstützt, da wir nicht verifizieren können, ob die Antworten tatsächlich von den entsprechenden EU-Institutionen stammen.</p> 
+    <p>Wenn Sie die Antwort veröffentlichen möchten, müssten Sie dieselbe Anfrage nochmals über AskTheEU.org stellen.</p>
+</div>
