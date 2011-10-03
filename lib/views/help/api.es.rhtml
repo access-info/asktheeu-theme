@@ -1,0 +1,56 @@
+<% @title = "API para programadores" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+  <h1><%=@title %></h1>
+
+    <h2>Introducción</h2>
+      <p>El proyecto AsktheEU.org funciona de acuerdo con los principios de los datos abiertos, disponibles para los programadores que quieran utilizarlos en otros sitios web y software.</p> 
+      <p>AsktheEU.org todavía no tiene un API completo pero vamos gradualmente añadiendo una gran cantidad de cosas que semejan en el uso a un API, según requieren los programadores.</p>
+
+    <h2>Enlaces a nuevas solicitudes</h2>
+      <p>Para animar tus usuarios a entrar en contacto con una autoridad pública específica utiliza URLs de la forma:</p>
+      <blockquote>
+      <%= link_to new_request_to_body_url(:url_name => "european_central_bank") , new_request_to_body_url(:url_name => "european_central_bank") %>
+      </blockquote>
+      <p>Estos son los parámetros que puedes añadir a las URLs, bien en la URL en sí, bien desde un formulario:</p>
+
+      <ul>
+          <li> <strong>title</strong> - título predefinido de la nueva solicitud.</li>
+          <li> <strong>default_letter</strong> - texto predefinido del cuerpo de la carta. La formula de encabezamiento (Querido...) y la despedida (Un saludo...) se añadirán al comienzo y al final.</li>
+          <li> <strong>body</strong> - en alternativa a default_letter esto pone como predefinido el texto entero de la solicitud dejándote la posibilidad de personalizar el saludo y la despedida.</li>
+          <li> <strong>tags</strong> - lista de etiquetas separadas con espacios, para que puedas buscar y enlazar posteriormente a las solicitudes realizadas, p.ej. <em>openlylocal spending_id:12345</em>. Los dos puntos (:) indican que la etiqueta contiene un valor ('machine tag'), que puede incluir puntos.</li>
+      </ul>
+
+    <h2>Feeds RSS (en realidad, Atom)</h2>
+      <p>En la mayoría de las páginas que incluyen solicitudes de acceso a la información hay feeds Atom que puedes utilizar para obtener actualizaciones y enlaces en formato XML. Puedes encontrar el URL del feed Atom con una de las siguientes opciones:
+      <ul>
+          <li>Busca el <img src="/images/feed-16.png" alt=""/>enlace al feed RSS.</li>
+          <li>Examina la declaración <tt>&lt;link rel="alternate" type="application/atom+xml"&gt;</tt> en la cabecera del código HTML.</li>
+          <li>Añade <tt>/feed</tt> al final de la URL.</li>
+      </ul>
+      </p>
+
+      <p>En particular, incluso las búsquedas avanzadas soportan feeds en formato Atom. Puedes hacer todo tipo de cosa con este formato, como consultas por autoridad, por tipo de archivo, por fecha o por estado. Para más detalles véase los <%= link_to 'consejos de la búsqueda avanzada', advanced_search_path %>.</p>
+
+    <h2>Datos estructurados en JSON</h2>
+      <p>Bastantes páginas tienen una versión JSON que permite bajar informaciones sobre los objetos en una forma estructurada. Para encontrarlos:
+      <ul>
+          <li>Añade <tt>.json</tt> al final de la URL.</li>
+          <li>Busca la declaración <tt>&lt;link rel="alternate" type="application/json"&gt;</tt> en la cabecera del código HTML. </li>
+      </ul>
+      </p>
+
+      <p>Solicitudes, usuarios y autoridades, todos tienen una versión JSON con informaciones básicas sobre ellos. Cada formato Atom tiene un equivalente JSON con informaciones sobre los objetos incluidos en el feed.</p>
+    
+    <h2>Información sobre todos los organismos públicos de la UE</h2>
+      <p>
+      Una fichero CSV con información sobre todos los organismos de la UE está disponible en el sitio web de AsktheEU.org: <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
+      </p>
+
+  <p>Por favor <a href="/help/contact">contáctanos</a> si necesitas funcionalidad en el API que todavía no esté aquí. Es un trabajo en proceso, y añadimos cosas cuando la gente nos lo pide.</p>
+
+  <div id="hash_link_padding"></div>
+</div>
+

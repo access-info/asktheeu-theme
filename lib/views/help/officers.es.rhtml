@@ -1,0 +1,70 @@
+<% @title = "Información para funcionarios de la UE" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Información para funcionarios de la UE</h1>
+
+    <h3><a href="#what">¿Qué es AsktheEU.org?</a></h3>
+    <h3><a href="#processing_requests">Proceso de las solicitudes</a></h3>
+    <h3><a href="#privacy_issues">Privacidad</a></h3>
+
+    <h1 id="what">¿Qué es AsktheEU.org?</h1>
+    
+    <h2>He llegado a este enlace a través de una solicitud de documentos ¿de qué se trata?</h2>
+    <p>AsktheEU.org es una página web gestionada por una organización no gubernamental para los derechos humanos, <a href="http://www.access-info.org">Access Info Europe</a>. Ayuda a los ciudadanos de a pie a solicitar documentos e información a los organismos de la UE y a compartir las respuestas con el resto de los ciudadanos.</p>
+    <p>La solicitud que ha recibido fue enviada a través de AsktheEU.org. </p>
+    <p>Tan solo tendrá que responder a la solicitud de la misma forma que una solicitud de documentos corriente, con la única diferencia de que su respuesta se publicará automáticamente en la Red.</p> 
+    <p>Si tiene dudas sobre privacidad o cualquier otro asunto, por favor lea las respuestas más abajo.</p> 
+    <p>Es posible que esté interesado en leer la sección <%= link_to 'Quiénes Somos', help_about_path %> para conocer con detalle qué ayuda proporciona nuestra página desde el punto de vista de un usuario.</p>
+    <p>También puede navegar por la página para buscar el organismo para el que trabaja y comprobar el estado de cualquiera de las solicitudes realizadas a través de la página.</p>
+    <p>Por último aceptamos comentarios o ideas de los comisarios de información, por favor <%= link_to 'contacte con nosotros', help_contact_path %>.</p>
+    
+    <h2>¿Por qué se publican las respuestas a las solicitudes de información? </h2>
+    <p>Creemos que aporta beneficios. Principalmente animará a los ciudadanos a estar más interesados y comprometidos con el trabajo de la UE.</p> 
+    <p>También esperamos que de esta manera se reduzca el número de solicitudes duplicadas que puedan recibir los organismos de la UE.</p> 
+    <p>Dado que las respuestas de acceso a solicitudes de documentación contienen información pública, que cualquier persona podría solicitarse desde un organismo público, no habría razón para no publicar dicha información.</p>
+    
+    <h2>¿Las personas que realizan solicitudes son reales?</h2>
+    <p>Por supuesto. Con el fin de tener control sobre las respuestas, utilizamos direcciones de correo electrónico generadas por ordenador para cada una de las solicitudes. No obstante, antes de poder enviar una solitud, todos los usuarios se deben registrar en la página web aportando una dirección de correo que verificamos. Puedes buscar en la página una lista con las solicitudes que se han realizado.</p>
+    
+    <h2>¡AsktheEU.org está enviando un gran número de solicitudes!</h2>
+    <p>AsktheEU.org no realiza ninguna solicitud. Enviamos las solicitudes en nombre de los usuarios, que son gente real que solicita información acerca de los temas en los que están interesados.</p>
+
+    <h1 id="processing_requests">Proceso de las solicitudes</h1>
+    
+    <h2 id="spam_problems">¡Puedo ver una solicitud en AsktheEu.org, pero no recibí ningún email!</h2>
+    <p>Si una petición aparece en la página web, entonces hemos intentado enviarla al órgano pertinente de la UE por email. Cualquier mensaje de fallo en la recepción aparecerá automáticamente en la página web.</p>
+    <p>Puede comprobar la dirección que estamos usando con el link “Ver dirección de e-mail” que aparece en la página del órgano de la UE.</p>
+    <p>Por favor, sea tan amable de <%= link_to 'ponerse en contacto', help_contact_path %> con nosotros si tiene una dirección mejor que podamos utilizar.</p>
+    <p>A veces las peticiones son bloqueadas por los “filtros de spam”. Para asegurarse de que esto no ocurra, pídale a sus departamentos de informática que añada cualquier email de @asktheeu.org a la “lista blanca”.</p>
+    <p>Si <a href="mailto:team@asktheeu.org">nos lo pide</a>, reenviaremos cualquier solicitud y/o le daremos detalles técnicos de la entrega de manera que un departamento de informática pueda localizar lo que ha ocurrido con el mensaje.</p>
+    
+    <h2 id="days">¿Cómo calculan la fecha límite que aparece en la página de peticiones?</h2>
+    <p>Calculamos 15 días laborales de conformidad con la Norma 1049/2001 a la cual obedecen muchas de las instituciones de la UE.</p>
+    <p>Comenzamos calculando los días desde el primer día laboral después de la recepción de la petición. Si la petición se envía en día laboral, empezamos a contar al siguiente día laboral.</p>
+    <p><strong>Recuerde</strong>: este es el plazo máximo ya que la Norma 1049/2001 dice: <q>La petición para acceder a un documento será atendida <strong>inmediatamente</strong>.</q> (Artículo 7.1)</p>
+    <p>Luego dice: <q>Se enviará un <strong>acuse de recibo</strong> al solicitante</q>. (Artículo 7.1)</p>
+    <p>Y a continuación aparece el <strong>plazo máximo</strong>: <q>Dentro del plazo de 15 días laborales desde la inscripción del solicitante, la institución debe tanto garantizar el acceso al documento requerido como dar acceso al mismo, de conformidad con el Artículo 10, dentro de ese periodo o, en una contestación por escrito, declarar las razones de la denegación total o parcial e informar al solicitante de su derecho a escribir una petición de confirmación de acuerdo con el párrafo 2 de este Artículo.</q> (Artículo 7.1)</p>
+    
+    <h2>¿Cómo se tramitan las prórrogas?</h2>
+    <p>Las prórrogas están permitidas por la ley de la UE durante un máximo de 15 días laborales adicionales:</p>
+    <p><q>En casos excepcionales, por ejemplo en el caso de una solicitud relativa a un documento de gran extensión o a un gran número de documentos, el límite de tiempo previsto en el párrafo 1 podría extenderse a 15 días laborales, siempre que el solicitante sea informado con anterioridad y se le den razones detalladas.</q> (Artículo 7.3)</p>
+    <p>Tenga en cuenta que debe darse notificación al solicitante – es obligación legal enviar un breve email con una o dos frases diciendo lo que ocurre; este debe enviarse lo antes posible, no en el día 14 después de la recepción de la solicitud.</p> 
+    <p>Sabemos que, a menudo, los funcionarios de la UE tienen que <strong>trabajar muy duro</strong> para responder a las solicitudes y esto se le oculta al público. Haciéndole saber al público que existen estas comunicaciones frecuentes con los solicitantes, se ayudará a todos, haciendo visible esta complejidad.</p>
+    
+    <h2>¿Cómo respondo a la solicitud?</h2>
+    <p>Simplemente responda al email de manera normal. La solicitud se le hará llegar al solicitante y se publicará también en la página web de AsktheEU.org. </p>
+    
+    <h2>¿Cómo puedo enviar un archivo grande que no puede ir por email?</h2>
+    <p>En lugar de hacerlo por e-mail, puede responder a una petición directamente desde su navegador web, incluso subiendo un archivo. Para ello, elija “responder a una solicitud” al final de la página de solicitudes. Contacte con nosotros si continúa siendo demasiado grande (más de, por ejemplo, 50Mb).</p>
+    
+    <h1 id="privacy_issues">Privacidad</h1>
+    
+    <h2>¿Por qué publican los nombres de los funcionarios y el texto de los emails?</h2>
+    <p>Consideramos que el trabajo de los funcionarios debe ser información pública. Únicamente eliminaremos dicha información bajo circunstancias excepcionales. Véase nuestra <%= link_to 'política para retirar datos', help_privacy_path(:anchor=>'takedown') %>.</p>
+
+    <h2 id="mobiles">¿Publican las direcciones de email o los números de teléfono móvil?</h2>
+    <p>Para prevenir el spam, retiramos automáticamente la mayoría de los emails y algunos de los números de teléfono móvil de las respuestas a las peticiones. Por favor, <%= link_to 'contacte con nosotros', help_contact_path %> si hemos olvidado retirar alguna. Por razones técnicas no siempre podemos eliminarlos de los archivos adjuntos, así como de algunos documentos en PDF.</p>
+    <p>Si necesita conocer alguna de las direcciones que hayamos eliminado, por favor, <%= link_to 'póngase en contacto', help_contact_path %> con nosotros. Algunas veces, una dirección de e-mail forma parte importante de una respuesta y lo pondremos de manera oculta en una anotación.</p>
+</div>
