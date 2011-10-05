@@ -1,0 +1,67 @@
+<% @title = "Unhappy about the response you got?" %>
+
+<h1>Unhappy about the response you got?</h1>
+
+<p>If ...</p>
+<ul>
+    <li>You didn't get a reply within 15 working days;</li>
+    <li>You did not get all of the information that you requested; <strong>or</strong></li>
+    <li>Your request was refused, but with no reasoning based on the exceptions included in Regulation 1049/2001</li>
+</ul>
+
+<p>... you can</p>
+<ol>
+    <li>Make an <strong>appeal</strong> (confirmatory application) by replying back to the same EU authority, telling them why you are unsatisfied with their reply.</li>
+    <li>If that doesn't help, complain to the <a href="http://www.ombudsman.europa.eu/start.faces"><strong>European Ombudsman</strong></a>.</li>
+    <li>If you can find a lawyer who has done the bar in an EU country, go to the European Court of Justice, to the General Court.</li>
+</ol>
+
+<h1 id="internal_review">1. Make an appeal (confirmatory application)</h1>
+
+<p>
+<% if !@info_request.nil? %>
+    <%= link_to "Request an internal review", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup" %> and then write a message asking the authority to review your request.
+<% else %>
+    At the bottom of the relevant request page on <%= site_name %> choose "make an appeal” . Then write a message asking for a review of the decision by the EU body not to grant you the information requested. 
+<% end %>
+</p>
+
+<p>Appeals should be processed within 15 working days, and then the EU body should write and let you know the results of the “confirmatory application”, unless they apply another 15 working day extension. You will then either get the information that you originally requested, or you will be told that they are sticking with, or confirming, their original decision.</p>
+
+<h1 id="complaining">2. Complaining to the European Ombudsman</h1>
+
+<p>If you are still unhappy after the EU institution, office, body or agency has replied to your appeal (confirmatory application), or in the event that they fail to reply at all, you can then complain to the European Ombudsman. To do this fill in the <a href="http://www.ombudsman.europa.eu/atyourservice/interactiveguide.faces">form on the Ombudsman's website</a>.</p>
+
+<p>To make it easier to send the relevant information to the European Ombudsman, either include a link to your request
+<% if !@info_request.nil? %>
+    <strong><%=h main_url(request_url(@info_request)) %></strong>
+<% else %>
+    on <%= site_name %>
+<% end %>
+in your complaint or print out the whole page of your request and all attachments.</p>
+
+<p><%= site_name %> has no special facilities for handling a request at this stage - it passes into the European Ombudsman's system. You can, however, make comments about the progress of your complaint on this site, in order to keep other people informed.</p>
+
+<p>The European Ombudsman's decisions are not legally binding on the institution, but they are usually taken into account by the EU bodies. Resolving a conflict in this way is also free, easy and fast.</p>
+
+<h1 id="court_justice">3. European Court of Justice</h1>
+
+<p>The advantage of appealing in this way is that the Court’s decision is legally binding on an institution. This means that the European Court of Justice can annul a decision refusing public access to documents, thereby obliging the institution holding the documents to review the request for public access.</p>
+
+<p>However, appeals to the European Court of Justice can take time (around 2 years), and since it requires the assistance of a lawyer registered at the bar in one of the 27 Member States it can also be expensive. Still, it is worth considering because legal challenges contribute to the long term development of the right of access to information and help to create jurisprudence on how the right of access to documents should be implemented in practice.</p>
+
+<h1 id="other_means">4. Think laterally!</h1>
+
+<ul>
+    <li>Make a <strong>new access to information request</strong> for summary information, or for documentation relating indirectly to matters in your refused request. <%= link_to 'Ask us', help_contact_path %> for ideas if you're stuck.</li>
+
+    <li>If any <strong>other public authorities</strong> or publicly owned companies are involved,
+    then make requests to them.</li>
+    
+    <li>Talk to civil society organisations, journalists or researchers who are interested in a similar issue to yours for ideas.</li>
+    
+    <li>Write to <strong>your MEPs</strong> or other politicians and ask for their help in finding the answer.</li>
+</ul>
+
+
+
