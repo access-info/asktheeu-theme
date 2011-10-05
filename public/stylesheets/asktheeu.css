@@ -108,6 +108,7 @@ div.lang {
     font-size: 14px;
     font-weight: bold;
     float: right;
+    margin-left: 0px;
 }
     #topnav ul li {
         padding-left: 8px;
