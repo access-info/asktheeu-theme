@@ -1,0 +1,45 @@
+# Frontpage
+msgid "You have the right to ask European Union bodies for information,<br/>they are legally obliged to respond"
+msgstr "Tienes derecho a pedir información a la Unión Europea,<br/>y ellos están obligados por ley a responder"
+
+msgid "About<br/>AsktheEU.org"
+msgstr "Acerca de<br/>AsktheEU.org"
+
+msgid "Find out who we are<br/>and how this website works"
+msgstr "Descubre quiénes<br/> somos y cómo funciona esta web"
+
+msgid "More"
+msgstr "Más"
+
+msgid "Make<br/>Your Request"
+msgstr "Haz<br/>tu solicitud"
+
+msgid "Ask a European Union body for information. (You will be asked to sign up/sign in first.)"
+msgstr "Solicita información a un organismo de la UE. (Tendrás que registrarte/apuntarte primero.)"
+
+msgid "Request"
+msgstr "Solicitar"
+
+msgid "Search<br/>Requests"
+msgstr "Buscar<br/>solicitudes"
+
+msgid "See what others are<br/> asking and the answers they are getting."
+msgstr "Mira lo que preguntan otros y las respuestas a sus preguntas."
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "EU institutions"
+msgstr "Organismos de la UE"
+
+msgid "Video"
+msgstr "Vídeo"
+
+msgid "News"
+msgstr "Noticias"
+
+msgid "View all news"
+msgstr "Todas las noticias"
+
+msgid "Follow us"
+msgstr "Síguenos"

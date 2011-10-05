@@ -1,28 +1,28 @@
 <% view_cache :ttl => 5.minutes.to_i, :tag => I18n.locale do %>
 
 <div id="frontpage-intro">
-    <p id="frontpage-lead">You have the right to ask European Union bodies for information,<br/>
-        they are legally obliged to respond</p>
+    <p id="frontpage-lead"><%= _("You have the right to ask European Union bodies for information,<br/>"+
+        "they are legally obliged to respond") %></p>
     
     <div id="frontpage-left-balloon">
-        <h2>About<br/>AsktheEU.org</h2>
-        <p>Find out who we are<br/>and how this website works</p>
+        <h2><%= _('About<br/>AsktheEU.org') %></h2>
+        <p><%= _("Find out who we are<br/>and how this website works") %></p>
         <div class="frontpage-button-link">
             <span><%= link_to _('More'), help_about_url %></span>
         </div>
     </div>
 
     <div id="frontpage-middle-balloon">
-        <h1>Make<br/>Your Request</h1>
-        <p>Ask a European Union body for information. (You will be asked to sign up/sign in first.)</p>
+        <h1><%= _("Make<br/>Your Request") %></h1>
+        <p><%= _("Ask a European Union body for information. (You will be asked to sign up/sign in first.)") %></p>
         <div class="frontpage-button-link make-request-link">
             <span><%= link_to _("Request"), body_index_path %></span>
         </div>
     </div>
 
     <div id="frontpage-right-balloon">
-        <h2>Search<br/>Requests</h2>
-        <p>See what others are<br/> asking and the answers they are getting.</p>
+        <h2><%= _("Search<br/>Requests") %></h2>
+        <p><%= _("See what others are<br/> asking and the answers they are getting.") %></p>
         <div class="frontpage-button-link">
             <span><%= link_to _("Search"), request_list_successful_url %></span>
         </div>
@@ -34,7 +34,7 @@
 <div id="frontpage-content">
     <div id="frontpage-inner-content">
         <div id="left-column">
-            <h1><%= link_to "EU institutions", body_index_path %></h1>
+            <h1><%= link_to _("EU institutions"), body_index_path %></h1>
             <div class="picture-frame">
                 <a href="<%= body_index_path %>">
                 <img src="/asktheeu-theme/images/front-picture-left.jpg" alt=""/>
@@ -42,23 +42,23 @@
             </div>
             <%= render :partial => 'general/welcome_text' %>
             <div id="follow-us-frame">
-                <p>Follow us</p>
+                <p><%= _("Follow us") %></p>
                 <span><img src="/asktheeu-theme/images/facebook_icon.gif" alt=""/></span>
                 <span><img src="/asktheeu-theme/images/twitter_icon.gif" alt=""/></span>
             </div>
         </div>
         <div id="right-column">
-            <h1>Video</h1>
+            <h1><%= _("Video") %></h1>
             <div class="picture-frame">
                 <iframe width="420" height="243" src="http://www.youtube-nocookie.com/embed/iMzYHoVdwSg?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
             </div>
-            <h1><a href="<%= blog_url %>">News</a></h1>
+            <h1><a href="<%= blog_url %>"><%= _("News") %></a></h1>
             <% for item in @blog_items[0..2]: %>
             <p><%= simple_date(Time.parse(item['pubDate'][0])) %><br/>
             <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= h item['title'] %></a>
             </p>
             <% end %>
-            <div class="link-arrow"><a href="<%= blog_url %>">View all news</a></div>
+            <div class="link-arrow"><a href="<%= blog_url %>"><%= _("View all news") %></a></div>
         </div>
         <div style="clear:both"></div>
     </div>
