@@ -1,0 +1,52 @@
+# Frontpage
+msgid "You have the right to ask European Union bodies for information,<br/>they are legally obliged to respond"
+msgstr "Sie haben das Recht Informationen von sämtlichen EU-Behörden anzufragen.<br/>Diese sind verpflichtet Ihnen zu antworten.  "
+
+msgid "About<br/>AsktheEU.org"
+msgstr "Über<br/>AsktheEU.org"
+
+msgid "Find out who we are<br/>and how this website works"
+msgstr "Finden Sie heraus wer wir sind und wie diese Internetseite funktioniert"
+
+msgid "More"
+msgstr "Mehr"
+
+msgid "Make<br/>Your Request"
+msgstr "Stellen Sie Ihre Anfrage"
+
+msgid "Ask a European Union body for information. (You will be asked to sign up/sign in first.)"
+msgstr "Fragen Sie eine EU-Behörde nach Informationen. (Zu Beginn werden Sie gebeten sich anzumelden oder zu registrieren)"
+
+msgid "Request"
+msgstr "Frag nach"
+
+msgid "Search<br/>Requests"
+msgstr "Suchanfrage"
+
+msgid "See what others are<br/> asking and the answers they are getting."
+msgstr "Sehen Sie sich an was andere Nutzer fragen und was wir Antworten sie erhalten."
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "EU institutions"
+msgstr "EU-Institutionen"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "News"
+msgstr "Neuigkeiten"
+
+msgid "View all news"
+msgstr "Alle Neuigkeiten ansehen"
+
+msgid "Follow us"
+msgstr "Folgen Sie uns"
+
+# Footer
+msgid "Help Desk"
+msgstr "Helpdesk"
+
+msgid "This website is powered by <a href='http://www.alaveteli.org/'>Alaveteli</a>. Other original content was developed by Access Info Europe and is made public under a <a  href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution, Share Alike licence</a>."
+msgstr "Diese Seite wurde durch <a href='http://www.alaveteli.org/'>Alaveteli</a> ermöglicht. Weitere Inhalte wurden von Access Info Europe entwickelt und unter der <a  href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution, Share Alike lizenziert</a>."
