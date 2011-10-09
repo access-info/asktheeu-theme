@@ -12,35 +12,34 @@
     
     <h3><%= link_to_unless_current "Anfragen-Leitfaden", help_requesting_path %></h3>
     <ul class="no_bullets">
-        <li><%= link_to "Making Requests", help_requesting_path(:anchor => 'making_requests') %></li>
-        <li><%= link_to "Finding EU bodies", help_requesting_path(:anchor => 'finding_bodies') %></li>
-        <li><%= link_to "Which languages?", help_requesting_path(:anchor => 'languages') %></li>
-        <li><%= link_to "Effective request tips", help_requesting_path(:anchor => 'tips') %></li>
-        <li><%= link_to "Responses &amp; Appeals", help_requesting_path(:anchor => 'answers_appeals') %></li>
-        <li><%= link_to "Request Moderation", help_requesting_path(:anchor => 'request_moderation') %></li>
+        <li><%= link_to "Anfragen stellen", help_requesting_path(:anchor => 'making_requests') %></li>
+        <li><%= link_to "EU-Behörden finden", help_requesting_path(:anchor => 'finding_bodies') %></li>
+        <li><%= link_to "Welche Sprachen?", help_requesting_path(:anchor => 'languages') %></li>
+        <li><%= link_to "Hilfreiche Anfragen-Tipps", help_requesting_path(:anchor => 'tips') %></li>
+        <li><%= link_to "Antworten &amp; Beschwerden", help_requesting_path(:anchor => 'answers_appeals') %></li>
+        <li><%= link_to "Anfragenmoderation", help_requesting_path(:anchor => 'request_moderation') %></li>
     </ul>
     
-    <h3><%= link_to_unless_current "Your Right to Know", help_right_to_know_path %></h3>
+    <h3><%= link_to_unless_current "Ihr Recht zu wissen", help_right_to_know_path %></h3>
         
-    <h3><%= link_to_unless_current "Your privacy", help_privacy_path %></h3>
+    <h3><%= link_to_unless_current "Ihre Privatsphäre", help_privacy_path %></h3>
     
-    <h3><%= link_to_unless_current "Information for EU Officials", help_officers_path %></h3>
+    <h3><%= link_to_unless_current "Informationen für EU-Vertreter", help_officers_path %></h3>
     <ul class="no_bullets">
-        <li><%= link_to "What is AsktheEU.org?", help_officers_path(:anchor => 'what') %></li>
-        <li><%= link_to "Processing Requests", help_officers_path(:anchor => 'processing_requests') %></li>
-        <li><%= link_to "Privacy Issues", help_officers_path(:anchor => 'privacy_issues') %></li>
+        <li><%= link_to "Was ist AsktheEU.org?", help_officers_path(:anchor => 'what') %></li>
+        <li><%= link_to "Anfragenbearbeitung", help_officers_path(:anchor => 'processing_requests') %></li>
+        <li><%= link_to "Datenschutzaspekte", help_officers_path(:anchor => 'privacy_issues') %></li>
     </ul>
 
     <h3></h3>
-    <h3><%= link_to_unless_current "About the Software", help_alaveteli_path %></h3>
+    <h3><%= link_to_unless_current "Über die Software", help_alaveteli_path %></h3>
 
-    <h3><%= link_to_unless_current "Programmers API", help_api_path %></h3>
+    <h3><%= link_to_unless_current "Programmierer-API", help_api_path %></h3>
     
-    <h3><%= link_to_unless_current "Credits", help_credits_path %></h3>
+    <h3><%= link_to_unless_current "Impressum", help_credits_path %></h3>
 
-    <h2 id="contact">Contact us</h2>
-    <p>If your question isn't answered here, or you just wanted to let us know
-    something about the site, <%= link_to 'contact us', help_contact_path %>.
+    <h2 id="contact">Kontakt</h2>
+    <p>Sollten Sie hier keine Antwort auf Ihre Frage finden oder sollten Sie uns etwas mitteilen wollen, <%= link_to 'nehmen Sie Kontakt auf', help_contact_path %>.
     </p>
 </div>
 

@@ -1,0 +1,71 @@
+<% @title = "Informationen für EU-Beamte" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip">
+    <h1>Informationen für EU-Beamte</h1>
+
+    <h3><a href="#what">Was ist AsktheEU?</a></h3>
+    <h3><a href="#processing_requests">Anfragenbearbeitung</a></h3>
+    <h3><a href="#privacy_issues">Datenschutzaspekte</a></h3>
+
+    <h1 id="what">Was ist AsktheEU?</h1>
+    
+    <h2>Ich bin hier durch einen Link in einer Dokumentenanfrage. Was hat es mit dieser Seite auf sich?</h2>
+    <p>AsktheEU.org ist eine Internetseite der Nichtregierungs-Menschenrechtsorganisation <a href="http://www.access-info.org">Access Info Europe</a>. Die Seite hilft Menschen wie Ihnen Dokumente und Informationen von der Europäischen Union anzufragen und die Antworten mit der Öffentlichkeit zu teilen.</p>
+    <p>Die erhaltene Anfrage wurde von jemanden über AsktheEU.org gestellt.</p>
+    <p>Sie sollten auf diese Anfrage genauso reagieren, wie Sie dies mit jeder anderen Dokumentenanfage auch tun würden. Der einzige Unterschied ist, dass Ihre Antwort automatisch im Internet veröffentlicht wird.</p> 
+    <p>Sollten Sie Datenschutz- odere andere Zweifel haben, lesen Sie bitte die unten aufgeführten Antworten.</p> 
+    <p>Vielleicht möchten Sie auch den Absatz <%= link_to 'Über AsktheEU.org', help_about_path %> lesen, um mehr über die Funktion der Seite aus Anwendersicht zu erfahren.</p>
+    <p>Sie können auf der Seite auch nach Ihrer Behörde suchen und den Status einer jede über diese Seite gestellte Anfrage einsehen.</p>
+    <p>Und zu guten Schluss begrüßen wir Kommentare und Gedanken von IFG-Beamten - setzen Sie sich gerne mit <%= link_to 'uns', help_contact_path %> in Verbindung!</p>
+    
+    <h2>Warum veröffentlichen Sie Antworten auf IFG-Anfragen?</h2>
+    <p>Wir glauben dass dies viele Vorteile mit sich bringt. Am wichtigsten, es wird das Interesse der Öffentlichkeit bestärken und diese unterstützen sich stärker in die Arbeit der Europäischen Union einzubringen.</p> 
+    <p>Wir hoffen auch, dass somit die Anzahl doppelter Anfragen an die EU-Behörden reduziert werden.</p> 
+    <p>Da Antworten auf Dokumentanfragen öffentliche Informationen enthalten, welche von jedermann jederzeit erneut von der entsprechenden Behörde anfragen könnte, gibt es keinen Grund die Informationen nicht zu veröffentlichen.</p>
+    
+    <h2>Sind die Anfragensteller richtige Personen?</h2>
+    <p>Ja. Um eine Übersicht über die Antworten zu behalten, verwenden wir computer-generierte Email-Adressen für jede Anfrage. Dennoch muss jedern Nutzer sich mit einer eindeutig verifizierbaren Email-Adresse auf der Seite registrieren bevor er/sie eine Anfrage stellen kann. Sie können über die Suchfunktion der Seite Listen der Anfragen eines jeden Nutzers finden.</p>
+    
+    <h2>AsktheEU.org stellt extrem viele Anfragen!</h2>
+    <p>AsktheEU.org stellt keinerlei Anfragen. Wir senden Anfragen im Auftrag unserer Nutzer, welche wirkliche Personen sind, die Informationen Anfragen, in welchen sie Interesse haben.</p>
+
+    <h1 id="processing_requests">Anfragenbearbeitung</h1>
+    
+    <h2 id="spam_problems">Ich sehe eine Anfrage auf AsktheEU.org, obwohl wir diese niemals per Email erhalten haben!</h2>
+    <p>Wenn eine Anfrage auf der Seite angezeigt wird, haben wir versucht disen der entsprechenden Behörde pre Email zu senden. Jegliche Fehlermeldung wird automatisch auf der Seite angezeigt.</p>
+    <p>Die von uns genutzte Adresse sehen Sie über den Link ´IFG-Emailadressen ansehen´, welcher bei Auswahl der jeweiligen Behörde über unsere Seite in der linken Spalte angezeigt wird.</p>
+    <p>Bitte seien Sie so freundlich sich <%= link_to 'mit uns', help_contact_path %> in Verbindung zu setzen, falls eine geeignetere Adresse zur Verfügung steht.</p>
+    <p>Es kann vorkommen, dass Anfragen von Spamfiltern blockiert werden. Um sicherzustellen, dass dies nicht vorkommt, bitten Sie Ihre IT-Abteilung alle Email-Adressen mit <strong>@asktheeu.org</strong> auf die Ausnahmeliste zu setzen.</p>
+    <p><a href="mailto:team@asktheeu.org">Auf Anfrage</a> senden wir jede Anfrage erneut und/oder stellen technische Sendedetails zur Verfügung, um IT-Abteilungen die Verfolgung von Emails zu ermöglichen.</p>
+    
+    <h2 id="days">Wie berechnen Sie die auf der Anfragenseite angezeigte Frist?</h2>
+    <p>Wir kalkulieren 15 Werktage im Rahmen der Verordnung 1049/2001, welche für viele EU-Institutionen bindend ist.</p>
+    <p>Wir beginnen die Tage mit Beginn des ersten Werktages nach der Versendung der Anfrage zu zählen. Sollte die Anfrage an einem Arbeitstag gesendet worden sein, so zählen wir ab dem folgenden Werktag.</p>
+    <p><strong>Erinnerung</strong>: Dies ist der maximale Zeitraum in Berufung auf Verordnung 1049/2001: <q>Ein Antrag auf Zugang zu einem Dokument wird unverzüglich bearbeitet.</q> (Artikel 7.1)</p>
+    <p>Weiter heißt es: <q>Dem Antragsteller wird eine Empfangsbescheinigung zugesandt.</q> (Artikel 7.1)</p>
+    <p>Und dann kommen wir zum <strong>maximalen Zeitrahmen</strong>: <q>Binnen fünfzehn Arbeitstagen nach Registrierung des Antrags gewährt das Organ entweder Zugang zu dem angeforderten Dokument und macht es innerhalb dieses Zeitraums gemäß Artikel 10 zugänglich oder informiert den Antragsteller schriftlich über die Gründe für die vollständige oder teilweise Ablehnung und über dessen Recht, gemäß Absatz 2 dieses Artikels einen Zweitantrag zu stellen.</q> (Artikel 7.1) </p>
+    
+    <h2>Wie handhaben Sie Fristverlängerungen?</h2>
+    <p>Für maximal 15 Werktage sind Fristverlängerungen sind EU-rechtlich erlaubt.</p>
+    <p><q>In Ausnahmenfällen, wie beispielsweise bei Antworten auf eine Anfrage bezüglich sehr großen Dokumenten oder einer großen Anzahl von Dokumenten kann die Frist, wie in Artikel 1 beschrieben, um 15 Tage verlängert werden. Voraussetzung hierfür ist, dass der Anfragensteller vorab, mit Angabe ausführlicher Gründe, benachrichtigt wird.</q> (Artikel 7.3)</p>
+    <p>Beachten Sie, dass Sie die Anfragensteller benachrichtigen müssen. Es reicht bereits eine Email von einem oder zwei Sätzen, dass es sich bei der Bearbeitung um eine gesetzliche Verpflichtung handelt. Dies sollte so schnell wie möglich und nicht erst 14 Tage nach der Anfrage geschehen.</p> 
+    <p>Wir sind uns bewusst, dass die Beantwortung von Anfragen für EU-Beamte häufig mit harter Arbeit verbunden ist, welche der von Öffentlichkeit verborgen bleibt. Diese Komplexität wird sichtbar, indem Sie die Öffentlichkeit durch regelmässige Kommunication mit den Anfragenstellern informieren. </p>
+    
+    <h2>Wie beantworte ich die Anfrage?</h2>
+    <p>Antworten Sie einfach ganz normal auf die Anfrage. Die Antwort wird and den Anfragensteller übermittelt und gleichzeitig auf der AsktheEU.org Seite veröffentlicht.</p>
+    
+    <h2>Wie kann ich eine große Datei senden, welche nicht per Email übermittelbar ist?</h2>
+    <p>Anstatt eine Email zu senden können Sie direkt über Ihren Webbrowser antworten und dort auch Dateien hochladen. Um dies zu tun, wählen Sie ´auf Anfrage antworte´ am Ende der Anfragenseite. Sollte die Datei zu groß sein (über 50 MB).</p>
+    
+    <h1 id="privacy_issues">Datenschutzaspekte</h1>
+    
+    <h2>Warum veröffentlichen Sie die Namen von Beamten und die Inhalte von Emails?</h2>
+    <p>We consider what officers or servants do in the course of their employment to be public information. We will only remove content in exceptional circumstances, see our <%= link_to 'take down policy', help_privacy_path(:anchor=>'takedown') %>.</p>
+
+    <h2 id="mobiles">Veröffentlichen Sie Email-Adressen und Handynummern?</h2>
+    <p>Um Spam vorzubeugen entfernen wir die meißten Email-Adressen und Handynummern automatisch aus Antworten auf gestellte Anfragen. Bitten setzen Sie sich <%= link_to 'mit uns', help_contact_path %> in Verbindung, falls wir eine vergessen haben sollten. Aus technischen Gründen entfernen wir diese nicht immer aus Dateianhängen, wie bestimmten PDFs.</p>
+    <p>Falls Sie eine Adresse benötigen, die wir entfernt haben, setzen Sie sich bitte <%= link_to 'mit uns', help_contact_path %> in Verbindung. Manchmal bildet eine Email-Adresse eine relevante Antwortkomponente und wir werden sie verdeckt in einem Kommentar posten.</p>
+
+</div>
