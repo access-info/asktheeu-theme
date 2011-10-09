@@ -540,6 +540,66 @@ h2.foi_results {
     display: none;
 }
 
+
+/** REQUEST STATES 
+TODO: Need to add states for
+ - icon_info_not_held_and_referred
+ - icon_partial_access
+ - icon_referred
+ - icon_request_acknowledged
+ - icon_transferred
+ - icon_unsatisfactory_response
+**/
+.icon_waiting_response {
+    background-image: url("/asktheeu-theme/images/states/icon_waiting_response.gif");
+    color: #009A9D;
+}
+.icon_waiting_clarification {
+    background-image: url("/asktheeu-theme/images/states/icon_waiting_clarification.gif");
+    color: #79BB59;
+}
+.icon_gone_postal {
+    background-image: url("/asktheeu-theme/images/states/icon_gone_postal.gif");
+    color: #009A9D;
+}
+.icon_not_held {
+    background-image: url("/asktheeu-theme/images/states/icon_info_not_held.gif");
+    color: #F19100;
+}
+.icon_rejected {
+    background-image: url("/asktheeu-theme/images/states/icon_info_refused.gif");
+    color: #E10613;
+}
+.icon_successful {
+    background-image: url("/asktheeu-theme/images/states/icon_successful.gif");
+    color: #79BB59;
+}
+.icon_partially_successful {
+    background-image: url("/asktheeu-theme/images/states/icon_partially_successful.gif");
+    color: #F19100;
+}
+.icon_internal_review {
+    background-image: url("/asktheeu-theme/images/states/icon_review_requested.gif");
+    color: #009A9D;
+}
+.icon_error_message {
+    background-image: url("/asktheeu-theme/images/states/icon_error_message.gif");
+    color: #858585;
+}
+.icon_requires_admin {
+    background-image: url("/asktheeu-theme/images/states/icon_requires_admin.gif");
+    color: #858585;
+}
+.icon_user_withdrawn {
+    background-image: url("/asktheeu-theme/images/states/icon_user_withdrawn.gif");
+    color: #E10613;
+}
+/* TODO: Missing from designer
+.icon_waiting_classification {
+.icon_waiting_response_overdue {
+.icon_waiting_response_very_overdue {
+*/
+
 /** MODAL SIGN-IN **/
 #signin-successful,
 #signin-successful a {
