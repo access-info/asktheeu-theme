@@ -88,7 +88,8 @@ div.lang {
     }
 
 #logged_in_bar {
-    top: 24px;
+    top: 25px;
+    right: 220px;
     font-weight: bold;
     font-size: 12px;
     padding: 3px 8px 1px 8px;
@@ -99,6 +100,10 @@ div.lang {
     #logged_in_bar, #logged_in_bar a, #logged_in_bar a:visited {
         color: #FFF;
         text-decoration: none;
+    }
+    #logged_in_bar a {
+        margin-left: 5px;
+        margin-right: 4px;
     }
 
 
