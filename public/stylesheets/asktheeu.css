@@ -540,6 +540,14 @@ h2.foi_results {
     display: none;
 }
 
+div.correspondence {
+    width: 540px;
+}
+
+div.comment_in_request {
+    width: 490px;
+}
+
 
 /** REQUEST STATES 
 TODO: Need to add states for
