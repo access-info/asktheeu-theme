@@ -542,11 +542,36 @@ h2.foi_results {
 
 div.correspondence {
     width: 540px;
+    background: none repeat scroll 0 0 #EAF5F6;
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 12px !important;
 }
 
 div.comment_in_request {
     width: 490px;
+    font-size: 12px !important;
+    background: #FBFBFB;
 }
+
+div.outgoing.correspondence {
+    background: none repeat scroll 0 0 #F4F5F6;
+    font-size: 12px !important;
+}
+
+div[id|="outgoing"] p,
+div[id|="incoming"] p {
+    font-size: 1em;
+}
+
+#link_box {
+    border: 1px solid #777;
+    opacity: 1;
+}
+
+#link_box .close-button {
+    background-color: #777;
+}
+
 
 
 /** REQUEST STATES 
