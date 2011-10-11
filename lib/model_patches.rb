@@ -19,6 +19,8 @@ Dispatcher.to_prepare do
     # Add intro paragraph to new request template
     OutgoingMessage.class_eval do
         def default_letter
+            return nil if self.message_type == 'followup'
+            
             _("Under the right of access to documents in the EU treaties, as developed in "+
             "Regulation 1049/2001, I am requesting documents which contain the following "+
             "information:\n\n")
