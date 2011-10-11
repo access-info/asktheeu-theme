@@ -23,6 +23,10 @@ body {
     width: 960px;
 }
 
+#wrapper_modal {
+    text-align: left;
+}
+
 #header_right {
     width: 180px;
     float: left;
@@ -161,14 +165,6 @@ h3, h3 a {
     color: #00aaa6;   
     font-size: 14px;
     font-weight: bold;
-}
-
-form input[type="submit"], a.link_button_green, a.link_button_green_large {
-    font-family: 'Open Sans', Helvetica, Arial;
-    font-weight: 600;
-}
-form input[type="submit"] {
-    padding: 0 11px;
 }
 
 
@@ -463,6 +459,42 @@ a,
 
 .request_right {
     width: 240px;
+}
+
+form input[type="submit"], a.link_button_green, a.link_button_green_large {
+    font-family: 'Open Sans', Helvetica, Arial;
+    font-weight: 600;
+}
+
+form input[type="submit"] {
+    padding: 0 11px;
+}
+
+
+/** SIGNUP **/
+#sign_together .form_button {
+    margin-left: 110px;
+}
+
+#signup .form_item_note, 
+#signin .form_note,
+#signin .form_checkbox {
+    font-size: 0.9em;
+    margin-left: 110px;
+    width: 240px;
+}
+
+#sign_together input[type="text"],
+#sign_together input[type="password"] {
+    width: 220px;
+}
+
+#middle_strip {
+    display: none;
+}
+
+#signin-successful {
+    text-align: center;
 }
 
 

@@ -24,17 +24,19 @@
         <%= stylesheet_link_tag '../asktheeu-theme/stylesheets/asktheeu.css', :title => "Main", :rel => "stylesheet"  %>
     </head>
     <body>
-        <div class="entirebody">            
-            <div id="content">
-                <% if flash[:notice] %>
-                    <div id="notice"><%= flash[:notice] %></div>
-                <% end %>
-                <% if flash[:error] %>
-                    <div id="error"><%= flash[:error] %></div>
-                <% end %>
+        <div class="entirebody">      
+            <div id="wrapper_modal">
+                <div id="content">
+                    <% if flash[:notice] %>
+                        <div id="notice"><%= flash[:notice] %></div>
+                    <% end %>
+                    <% if flash[:error] %>
+                        <div id="error"><%= flash[:error] %></div>
+                    <% end %>
 
-                <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
-                <%= yield :layout %>
+                    <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
+                    <%= yield :layout %>
+                    </div>
                 </div>
             </div>
         </div>
