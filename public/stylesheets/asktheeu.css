@@ -28,6 +28,16 @@ body {
     float: left;
     margin-top: 30px;
 }
+    .feed_link a, 
+    .act_link a, 
+    #header_right > a {
+        color: #009a9d;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    #header_right a:hover {
+        text-decoration: underline; 
+    }
 
 #header_left,
 .header_left {
