@@ -10,6 +10,12 @@ msgstr ""
 msgid "Summary:"
 msgstr "Subject:"
 
+msgid "a one line summary of the information you are requesting, \n\t\t\te.g."
+msgstr "Try to be brief and specific, e.g."
+
+msgid "'Crime statistics by ward level for Wales'"
+msgstr "\"Spending on agricultural subsidies by country\""
+
 #: app/views/layouts/default.rhtml:15
 msgid "Make and browse Freedom of Information (FOI) requests"
 msgstr "Make and browse access to information requests"

@@ -526,6 +526,10 @@ h2.foi_results {
         font-size: 1em;
     }
 
+.form_item_note {
+    width: 510px;
+}
+
 #request_search_ahead_results {
     font-size: 1em;
     margin-left: 110px;
