@@ -587,6 +587,20 @@ div[id|="incoming"] p {
 }
 
 
+/** REQUEST FILTER **/
+#filter_requests_form {
+    width: 645px;       /* Need some extra space for types of requests */
+    margin-top: 15px;
+}
+
+#request_form label, 
+label.form_label {
+    color: #00AAA6;
+    font-family: Helvetica,Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 
 /** REQUEST STATES 
 TODO: Need to add states for
