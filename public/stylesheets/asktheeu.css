@@ -640,7 +640,7 @@ div[id|="incoming"] p {
 
 /** REQUEST FILTER **/
 #filter_requests_form {
-    width: 645px;       /* Need some extra space for types of requests */
+    width: 660px;       /* Need some extra space for types of requests */
     margin-top: 15px;
 }
 
