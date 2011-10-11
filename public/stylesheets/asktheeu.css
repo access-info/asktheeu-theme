@@ -29,7 +29,8 @@ body {
     margin-top: 30px;
 }
 
-#header_left {
+#header_left,
+.header_left {
     width: 600px;
     float: right;
     padding: 20px 30px;
@@ -510,6 +511,10 @@ h2.foi_results {
         background: none;
     }
 
+span.desc {
+    float: left;
+}
+
 .date_added {
     display: none;
 }
@@ -642,6 +647,7 @@ TODO: Need to add states for
 .icon_waiting_response_very_overdue {
 */
 
+
 /** MODAL SIGN-IN **/
 #signin-successful,
 #signin-successful a {
@@ -659,6 +665,25 @@ TODO: Need to add states for
 #sign_together .errorExplanation {
     width: 360px;
     text-align: left;
+}
+
+
+/** USER PROFILE **/
+#user_photo_on_profile {
+    float: right;
+    margin-top: 30px;
+}
+
+.undescribed_requests {
+    padding: 19px 29px;
+    width: 780px;
+}
+
+#user_profile_search {
+    float: right;
+    padding-left: 0px;
+    padding-right: 150px;
+    width: 480px;
 }
 
 
