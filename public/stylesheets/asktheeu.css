@@ -163,6 +163,15 @@ h3, h3 a {
     font-weight: bold;
 }
 
+form input[type="submit"], a.link_button_green, a.link_button_green_large {
+    font-family: 'Open Sans', Helvetica, Arial;
+    font-weight: 600;
+}
+form input[type="submit"] {
+    padding: 0 11px;
+}
+
+
 /** HELP **/
 #left_column_flip {
     margin-top: 10px;
