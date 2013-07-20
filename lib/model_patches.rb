@@ -4,8 +4,7 @@
 # classes are reloaded, but initialization is not run each time.
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
-require 'dispatcher'
-Dispatcher.to_prepare do
+Rails.configuration.to_prepare do
     # Remove UK-specific references to FOI
     InfoRequest.class_eval do
         def law_used_full
