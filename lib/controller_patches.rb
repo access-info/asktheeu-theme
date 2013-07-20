@@ -27,4 +27,14 @@ Rails.configuration.to_prepare do
             render :template => "public_body/list"
         end
     end
+
+    HelpController.class_eval do
+        def help_out
+            render :template => "help/help_out"
+        end
+
+        def right_to_know
+            render :template => "help/right_to_know"
+        end
+    end
 end
