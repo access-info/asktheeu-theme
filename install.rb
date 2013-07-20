@@ -1,7 +1,7 @@
 # Install hook code here
 
 plugin_path = File.expand_path(File.join(File.dirname(__FILE__), "public"))
-main_app_path = File.join(RAILS_ROOT, 'public', 'asktheeu-theme')
+main_app_path = Rails.root.join('public', 'asktheeu-theme')
 
 # If the symlink to be created exists, warn the user and do nothing
 if File.exists?(main_app_path)

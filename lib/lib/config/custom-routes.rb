@@ -1,4 +1,4 @@
-if ENV["RAILS_ENV"] != "test"
+if Rails.env != "test"
     ActionController::Routing::Routes.draw do |map|
         # Additional help pages
         map.with_options :controller => 'help' do |help|
