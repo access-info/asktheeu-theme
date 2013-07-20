@@ -637,6 +637,10 @@ div[id|="incoming"] p {
     background-color: #777;
 }
 
+#follow_count {
+    color: #7BBB58;
+}
+
 
 /** REQUEST FILTER **/
 #filter_requests_form {
