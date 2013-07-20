@@ -1,5 +1,3 @@
-<% view_cache :ttl => 5.minutes.to_i, :tag => I18n.locale do %>
-
 <div id="frontpage-intro">
     <p id="frontpage-lead"><%= _("You have the right to ask European Union bodies for information,<br/>"+
         "they are legally obliged to respond") %></p>
@@ -53,7 +51,7 @@
                 <iframe width="420" height="243" src="http://www.youtube-nocookie.com/embed/iMzYHoVdwSg?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
             </div>
             <h1><a href="<%= blog_url %>"><%= _("News") %></a></h1>
-            <% for item in @blog_items[0..2]: %>
+            <% for item in @blog_items[0..2] %>
             <p><%= simple_date(Time.parse(item['pubDate'][0])) %><br/>
             <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= h item['title'] %></a>
             </p>
@@ -63,4 +61,3 @@
         <div style="clear:both"></div>
     </div>
 </div>
-<% end %>
