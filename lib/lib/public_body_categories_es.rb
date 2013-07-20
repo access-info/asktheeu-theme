@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 PublicBodyCategories.add(:es, [
     "Principales instituciones",
     	[ "european_council", "Consejo Europeo", "Consejo Europeo" ],
