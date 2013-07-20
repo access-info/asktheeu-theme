@@ -53,7 +53,7 @@
             <h1><a href="<%= blog_url %>"><%= _("News") %></a></h1>
             <% for item in @blog_items[0..2] %>
             <p><%= simple_date(Time.parse(item['pubDate'][0])) %><br/>
-            <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= h item['title'] %></a>
+            <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
             </p>
             <% end %>
             <div class="link-arrow"><a href="<%= blog_url %>"><%= _("View all news") %></a></div>
