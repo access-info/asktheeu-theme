@@ -455,6 +455,7 @@ a,
 
 .request_left {
     width: 600px;
+    padding-right: 0px;
 }
 
 .request_right {
