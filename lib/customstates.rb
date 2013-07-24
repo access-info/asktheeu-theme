@@ -44,7 +44,7 @@ module RequestControllerCustomStates
             redirect_to unhappy_url(info_request)
         elsif info_request.calculate_status == 'transferred'
             flash[:notice] = _("Authority has transferred your request to a different public body.")
-            redirect_to request_url(@info_request)
+            redirect_to request_url(info_request)
         else
             raise "unknown calculate_status " + info_request.calculate_status
         end
