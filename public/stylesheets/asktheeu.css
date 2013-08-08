@@ -695,6 +695,10 @@ TODO: Need to add states for
     background-image: url("/asktheeu-theme/images/states/icon_partially_successful.gif");
     color: #F19100;
 }
+.icon_incomplete {
+    background-image: url("/asktheeu-theme/images/states/icon_partially_successful.gif");
+    color: #F19100;
+}
 .icon_internal_review {
     background-image: url("/asktheeu-theme/images/states/icon_review_requested.gif");
     color: #009A9D;

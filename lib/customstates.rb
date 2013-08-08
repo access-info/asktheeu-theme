@@ -22,6 +22,8 @@ module InfoRequestCustomStates
                 _("Referred.")
             elsif status == 'transferred'
                 _("Transferred.")
+            elsif status == 'incomplete'
+                _("Incomplete.")
             else
                 raise _("unknown status ") + status        
             end
@@ -29,7 +31,8 @@ module InfoRequestCustomStates
 
         def theme_extra_states
             return ['referred',
-                    'transferred']
+                    'transferred',
+                    'incomplete']
         end
     end
 end
@@ -45,6 +48,9 @@ module RequestControllerCustomStates
         elsif info_request.calculate_status == 'transferred'
             flash[:notice] = _("Authority has transferred your request to a different public body.")
             redirect_to request_url(info_request)
+        elsif info_request.calculate_status == 'incomplete'
+            flash[:notice] = _("Authority has not returned all the requested information.")
+            redirect_to unhappy_url(info_request)
         else
             raise "unknown calculate_status " + info_request.calculate_status
         end
