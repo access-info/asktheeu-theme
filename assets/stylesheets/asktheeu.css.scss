@@ -372,7 +372,7 @@ h3, h3 a {
 
 #intro-right-down {
     
-   background:url(/asktheeu-theme/images/send.png);
+   background: image-url('send.png');
     width: 395px;
     height:131px;
     float:left;
@@ -406,7 +406,7 @@ h3, h3 a {
     float: left;
     width: 196px;
     height: 184px;
-    background: url(/asktheeu-theme/images/yellow_balloon.gif);
+    background: image-url('yellow_balloon.gif');
     padding: 10px 30px 20px 50px;
     margin: 37px 8px 60px 0px;
     text-align: center;
@@ -430,7 +430,7 @@ h3, h3 a {
     float: left;
     width: 314px;
     height: 283px;
-    background: url(/asktheeu-theme/images/blue_balloon.gif);
+    background: image-url('blue_balloon.gif');
     padding: 0px 30px 0px 30px;
     text-align: center;
 }
@@ -454,7 +454,7 @@ h3, h3 a {
     float: left;
     width: 218px;
     height: 174px;
-    background: url(/asktheeu-theme/images/green_balloon.gif);
+    background: image-url('green_balloon.gif');
     padding: 5px 20px 20px 50px;
     margin: 42px 0px 60px 4px;
     text-align: center;
@@ -496,7 +496,7 @@ h3, h3 a {
 .frontpage-button-link {
     height: 24px;
     width: 100px;
-    background: url(/asktheeu-theme/images/button_gradient.gif);
+    background: image-url('button_gradient.gif');
     border-radius: 5px;
     text-align: center;
     padding-top: 3px;
@@ -590,7 +590,7 @@ h3, h3 a {
 		border: 1px solid #B2DCDE;
 		border-radius: 15px;
 		margin-bottom: 30px;
-		/*background: url('/asktheeu-theme/images/requests.png');*/
+		/*background: image-url('requests.png');*/
 		margin-left: 45px;
 		margin-top: 23px;
 		background-color: #FFF;
@@ -624,7 +624,7 @@ h3, h3 a {
     }
 
 .link-arrow {
-    background: no-repeat url(/asktheeu-theme/images/arrow_icon.gif) ;
+    background: no-repeat image-url('arrow_icon.gif');
     padding-top: 6px;
     padding-left: 35px;
     height: 30px;
@@ -909,47 +909,47 @@ TODO: Need to add states for
  - icon_unsatisfactory_response
 **/
 .icon_waiting_response {
-    background-image: url("/asktheeu-theme/images/states/icon_waiting_response.gif");
+    background-image: image-url("states/icon_waiting_response.gif");
     color: #009A9D;
 }
 .icon_waiting_clarification {
-    background-image: url("/asktheeu-theme/images/states/icon_waiting_clarification.gif");
+    background-image: image-url("states/icon_waiting_clarification.gif");
     color: #79BB59;
 }
 .icon_gone_postal {
-    background-image: url("/asktheeu-theme/images/states/icon_gone_postal.gif");
+    background-image: image-url("states/icon_gone_postal.gif");
     color: #009A9D;
 }
 .icon_not_held {
-    background-image: url("/asktheeu-theme/images/states/icon_info_not_held.gif");
+    background-image: image-url("states/icon_info_not_held.gif");
     color: #F19100;
 }
 .icon_rejected {
-    background-image: url("/asktheeu-theme/images/states/icon_info_refused.gif");
+    background-image: image-url("states/icon_info_refused.gif");
     color: #E10613;
 }
 .icon_successful {
-    background-image: url("/asktheeu-theme/images/states/icon_successful.gif");
+    background-image: image-url("states/icon_successful.gif");
     color: #79BB59;
 }
 .icon_partially_successful {
-    background-image: url("/asktheeu-theme/images/states/icon_partially_successful.gif");
+    background-image: image-url("states/icon_partially_successful.gif");
     color: #F19100;
 }
 .icon_internal_review {
-    background-image: url("/asktheeu-theme/images/states/icon_review_requested.gif");
+    background-image: image-url("states/icon_review_requested.gif");
     color: #009A9D;
 }
 .icon_error_message {
-    background-image: url("/asktheeu-theme/images/states/icon_error_message.gif");
+    background-image: image-url("states/icon_error_message.gif");
     color: #858585;
 }
 .icon_requires_admin {
-    background-image: url("/asktheeu-theme/images/states/icon_requires_admin.gif");
+    background-image: image-url("states/icon_requires_admin.gif");
     color: #858585;
 }
 .icon_user_withdrawn {
-    background-image: url("/asktheeu-theme/images/states/icon_user_withdrawn.gif");
+    background-image: image-url("states/icon_user_withdrawn.gif");
     color: #E10613;
 }
 /* TODO: Missing from designer
@@ -1012,7 +1012,7 @@ float: none;
 	width: 960px;
 	/*height:32px;*/
 	margin: 0 auto;
-	background-image: url("/asktheeu-theme/images/footer.png");
+	background-image: image-url("footer.png");
 	float:left;
 }
 #footer-inner {

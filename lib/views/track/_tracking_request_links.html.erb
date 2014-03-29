@@ -29,15 +29,16 @@
         <% elsif track_thing %>
             <div class="feed_link feed_link_<%=location%>">
                 <div class="track-button">
-                    <!-- <%= link_to '<img src="/images/email-16.png" alt="">', do_track_url(track_thing) %> -->
-                    <%= link_to _("I also want to know"), do_track_url(track_thing) %>
+                    <!-- <%= link_to image_tag("email-16.png", :alt => ""), do_track_url(track_thing) %> -->
+                    <%= link_to _("I also want to know"),
+                    do_track_url(track_thing) %>
                 </div>
             </div>
             
             <% if location != 'frontpage' %>
               <div style="clear:both"></div>
               <div class="feed_link feed_link_<%=location%>">
-                  <%= link_to raw('<img src="/images/feed-16.png" alt="">'), do_track_url(track_thing, 'feed') %> 
+                  <%= link_to image_tag("feed-16.png", :alt => ""), do_track_url(track_thing, 'feed') %> 
                   <%= link_to (location == 'sidebar' ? _('RSS feed of updates') : _('RSS feed')),  do_track_url(track_thing, 'feed') %>
               </div>
             <% end %>
