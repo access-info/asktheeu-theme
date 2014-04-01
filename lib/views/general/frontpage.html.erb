@@ -88,7 +88,7 @@
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
-					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
 				</div>
 				<br/><br/><br/>
 				<div class="part2">
@@ -98,7 +98,7 @@
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
-					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
 				</div>
 				
             </div>
@@ -110,7 +110,7 @@
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
-					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
 				</div>
 				<br/><br/><br/>
 				<div class="part2">
@@ -120,7 +120,7 @@
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
-					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
 				</div>
             </div>
              

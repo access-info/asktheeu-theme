@@ -2,7 +2,7 @@
 <div class="tracking-links-<%= location %>">
     <% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", track_thing.info_request.id]) + 1 %>
     <% if location == 'frontpage' %>
-      <h4><%= link_to excerpt(track_thing.info_request.title, "", 70), request_url(track_thing.info_request) %></h4>
+      <h4><%= link_to excerpt(track_thing.info_request.title, "", :radius => 70), request_url(track_thing.info_request) %></h4>
     <% end %>
     <div class="request-tracker-<%= location %>">
         <div class="counter"><%= follower_count %></div>
