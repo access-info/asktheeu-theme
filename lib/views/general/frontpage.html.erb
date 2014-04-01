@@ -94,7 +94,7 @@
 				<div class="part2">
 					<% item = @blog_items[2]; %>				
 					<p>					
-					<img style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" src="/asktheeu-theme/images/3.jpg" width="278" height="128"/>
+                                        <%= image_tag('3.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "278", :height => "128") %>
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
@@ -106,7 +106,7 @@
 				<div class="part1">
 					<% item = @blog_items[1]; %>				
 					<p>					
-					<img style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" src="/asktheeu-theme/images/2.jpg" width="278" height="128"/>
+                                        <%= image_tag('2.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "278", :height => "128") %>
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
@@ -116,7 +116,7 @@
 				<div class="part2">
 					<% item = @blog_items[3]; %>				
 					<p>
-					<img style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" src="/asktheeu-theme/images/4.jpg" width="278" height="128"/>
+                                        <%= image_tag('4.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "278", :height => "128") %>
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
