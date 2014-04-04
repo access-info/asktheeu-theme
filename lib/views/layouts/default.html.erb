@@ -94,9 +94,9 @@
                 <% end %>
 
 
-              <%= link_to _("Sign out"), signout_path(:r => request.fullpath) %>
+              <%= link_to _("Log out"), signout_path(:r => request.fullpath) %>
           <% else %>
-              <%= link_to _("Sign in or sign up"), signin_path(:r => request.fullpath) %>
+              <%= link_to _("Log in | Sign up"), signin_path(:r => request.fullpath) %>
           <% end %>
           </div>
         <% end %>   

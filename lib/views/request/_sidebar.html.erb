@@ -4,10 +4,10 @@
 
     <% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", @info_request.id]) + 1 %>
     <p>
-      <%= n_("There is {{count}} person following this request",
-        "There are {{count}} people following this request",
-        follower_count,
-        :count => follower_count) %>
+		<div class="counter"><%= follower_count %></div>	
+		<div class="counter-label"> 
+			<%= n_("person following this request","people following this request") %>
+		</div>
     </p>
      <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => @info_request.user && @info_request.user == @user, :location => 'sidebar' } %>
    </div>

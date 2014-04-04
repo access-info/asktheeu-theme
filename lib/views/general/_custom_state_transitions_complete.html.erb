@@ -3,8 +3,3 @@
     <label for="referred<%=id_suffix%>"><%= _('Authority has <strong>referred you to another public body</strong> for an answer') %></label>
 </div>
 
-<div>
-    <%= radio_button "incoming_message", "described_state", "incomplete", :id => 'incomplete' + id_suffix %>
-    <label for="incomplete<%=id_suffix%>"><%= _('Authority has <strong>not returned all the requested information</strong>') %></label>
-</div>
-

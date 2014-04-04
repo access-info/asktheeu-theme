@@ -1,11 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,700);
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Semibold:300,300italic,700);
+@import url(‘font-awesome/css/font-awesome.min.css’);
+
+@fontFamily: 'Open Sans', open-sans-custom, sans-serif;
+@fontFamily: 'OSlight', open-sans-semibold, sans-serif;
+@fontFamilyCondensed: 'Open Sans Condensed', open-sans-condensed, sans-serif;
+@fontFamily: 'FontAwesome', font-awesome;
 
 /** LAYOUT **/
 body {
-    font-family: Verdana, Helvetica, Arial;
+    font-family: Open Sans,Verdana, Helvetica, Arial;
     font-size: 12px;
-    line-height: 1.5;
+    
 }
     body.front {
         background: none;
@@ -13,7 +21,7 @@ body {
 
 #content {
     width: 840px;
-    padding: 0px 60px;
+    padding: 22px 60px;
     margin: auto;
 }
 
@@ -67,14 +75,17 @@ body {
 
 /** HEADER **/ 
 #banner {
-    background: #EAF5F6;
+    background:#E2EBE1;
     border: none;
     height: 150px;
     position: relative;
+   margin-bottom: -40px;
+    border-bottom: 1px solid #B2DCDE;
+    
 }
 
 #banner_inner {
-    width: 960px;
+    width: 1060px;
     height: 150px;
 }
     #banner_inner a:hover {
@@ -83,12 +94,23 @@ body {
 
 #logo {
     position: absolute;
-    top: 20px;
+    top: 49px;
+}
+#topnav{top:66px}
+
+#navigation_search{opacity:0}
+#navigation_search_form{
+text-align: center;
 }
 
-#navigation_search {
-    top: 50px;
-    visibility: hidden;
+
+
+#navigation_search2 
+{
+    
+    margin: 298px 54px 0px 0px;	
+	font-size: 13px;
+	
 }
 
 div.lang {
@@ -98,7 +120,7 @@ div.lang {
     text-transform: capitalize;
 }
     div.lang a {
-        color: #00aaa6;
+        color: #7cb955;
         text-decoration: none;
     }
 
@@ -109,45 +131,100 @@ div.lang {
     font-size: 12px;
     padding: 3px 8px 1px 8px;
     height: 19px;
-    background: #009a9d;
+    background: #7cb955;
     border-radius: 5px;
+    border: 1px solid #5D8F3B;
 }
     #logged_in_bar, #logged_in_bar a, #logged_in_bar a:visited {
+        
         color: #FFF;
         text-decoration: none;
+        background: -moz-linear-gradient(center top , #7CB955, #5D8F3B) repeat scroll 0% 0% transparent;
+        
     }
     #logged_in_bar a {
         margin-left: 5px;
         margin-right: 4px;
+        transition: color 0.5s ease-in-out 0s;
     }
-
+	
+	 #logged_in_bar:hover a {
+        
+        color: #DBE23A!important;
+        text-decoration: none;
+        
+    }
 
 /** NAVIGATION BAR **/ 
 #topnav {
-    font-family: Helvetica, Arial;
+    font-family:Open Sans, Helvetica, Arial;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     float: right;
     margin-left: 0px;
+    left:0px;
 }
-    #topnav ul li {
+#topnav ul li {
         padding-left: 8px;
         padding-right: 8px;
-        margin-right: 8px;
-
+        margin-left: 4px;
+		 width:141px;
+		 height:40px;
+		 border: 1px solid #5D8F3B;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+		 background:#7cb955;
+		 line-height:37px;
+		 text-shadow: 0px -1px 0px #000;
+		 text-align: center;
     }
     #topnav ul li a {
-        color: #00aaa6 !important;
+        color: #FFFFFF!important;
+        font-weight: 600;
+         transition: color 0.5s ease-in-out 0s;
+         
     }
-
-
+    #topnav ul li:hover a {
+        color:#DBE23A !important;
+        text-decoration:none;
+    }
+    #topnav ul li:active a {
+        color:#DBE23A !important;
+        text-decoration:none;
+        border:none;
+    }
+    #topnav ul li:hover{
+        color: #DBE23A !important;
+        text-decoration:none;
+    }
+    #topnav ul li a:active{
+        color: #DBE23A!important;
+        text-decoration:none;
+        border:none;
+    }
+    #topnav ul li:hover .selected {
+        color: #DBE23A !important;
+        
+    }
+	
+	
+	#topnav ul li.selected {
+		background-color:#7CB955;
+		background: -moz-linear-gradient(center top ,#7CB955, #5d8f3b) repeat scroll 0% 0% transparent;
+	}
+	
+	#topnav ul li.current {
+		background-color:#000000;
+		background: -moz-linear-gradient(center top ,#7CB955, #5d8f3b) repeat scroll 0% 0% transparent;
+	}
+	
 /** MAIN SITE **/
 h1, h1 a {
     font-family: 'Open Sans', Helvetica, Arial;
     color: #009a9d;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 30px;
     text-decoration: none;
@@ -166,7 +243,6 @@ h3, h3 a {
     font-size: 14px;
     font-weight: bold;
 }
-
 
 /** HELP **/
 #left_column_flip {
@@ -222,9 +298,100 @@ h3, h3 a {
 }
 
 #frontpage-intro {
-    width: 960px;
+    width: 1060px;
     margin: auto;
     position: relative;
+}
+
+#intro-container { 
+    
+    width: 1060px;
+    height:361px;
+    
+}
+
+#intro-big {
+    
+   
+    width: 642px;
+    height:361px;
+    float:left;
+    border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    
+}
+#info-bar {
+    
+    background-color:#009A9D;
+    color:#FFFFFF;
+    height:26px;
+     border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    margin-top:22px;
+    text-align:left;
+    margin-bottom:22px;
+    font-size: 15px;
+	line-height: 24px;
+	padding-left:10px;
+}
+#intro-right-up {
+    
+	width: 396px;
+	height: 209px;
+	margin-left: 664px;
+	margin-bottom:22px;
+	background: #dbe23a;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#intro-right-up p.search
+{
+	color: #FFFFFF;
+	font-size: 61px;
+	font-weight: 600;
+	text-shadow: 0px 0px 10px #646464;
+	margin-left: 23px;
+}
+#intro-right-up p.asktheeu
+{
+	color: #FFF;
+	margin-left: 24px;
+	text-shadow: 0px 0px 10px #646464;
+	font-weight: 500;
+	font-size: 41px;
+	float: left;
+	margin-top: -79px;
+}
+
+#intro-right-down {
+    
+   background:url(/asktheeu-theme/images/send.png);
+    width: 395px;
+    height:131px;
+    float:left;
+    margin-left:22px; 
+    
+}
+#send {
+	font-size: 50px;
+	color: #FFF;
+	margin-top: 5px;
+	margin-left: 20px;
+	text-shadow: 0px 0px 10px #000;
+}
+#arequest{
+	font-size: 33px;
+	margin-left: 20px;
+	margin-top: -21px;
+	color: #FFF;
+	text-shadow: 0px 0px 10px #000;
 }
 
 #frontpage-lead {
@@ -337,12 +504,13 @@ h3, h3 a {
 }
     
 #frontpage-content {
-    background: #EAF5F6;
-    border-top: 1px solid #b2dcde;
+    background-color:#e2ebe1;
+    border-bottom: 1px solid #B2DCDE;
+    border-top: 1px solid #B2DCDE;
 }
 
 #frontpage-inner-content {
-    width: 960px;
+    width: 1060px;
     margin: auto;
     position: relative;
     padding-bottom: 20px;
@@ -350,14 +518,55 @@ h3, h3 a {
 
 #left-column {
     float: left;
-    background: #EAF5F6;
-    width: 450px;
+    background: :#e2ebe1;
+    width: 642px;
 }
 
 #right-column {
-    float: right;
-    width: 450px;
+    float: left;
+    width: 396px;
+    height: 756px;
+    margin-left:22px;
 }
+#sq1
+{
+	float:left;
+	width: 642px;
+	margin-right: 60px;
+}
+
+#sq1 .part1 
+{
+	float:left;
+	width: 280px;
+	margin-right: 60px;
+}
+#sq1 .part2 
+{
+	width: 280px;
+	float: left;
+	margin-top: -53px;
+}
+#sq2
+{
+	float:left;
+	width: 642px;
+	margin-right: 60px;
+}
+
+#sq2 .part1 
+{
+	float:left;
+	width: 280px;
+	margin-right: 60px;
+}
+#sq2 .part2 
+{
+	width: 280px;
+	float: left;
+	margin-top: -53px;
+}
+
 
 #frontpage-content p {
     color: #6f6f6e;
@@ -367,7 +576,7 @@ h3, h3 a {
 
 #frontpage-content p a {
     color: #009a9d;
-    font-size: 12px;
+    font-size: 20px;
     text-decoration: none;
 }
     #frontpage-content a:hover {
@@ -375,16 +584,21 @@ h3, h3 a {
     }
 
 .picture-frame {
-    width: 450px;
-    height: 270px;
-    background: #FFF;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
+		
+		width: 296px;
+		/*height: 586px;*/
+		border: 1px solid #B2DCDE;
+		border-radius: 15px;
+		margin-bottom: 30px;
+		/*background: url('/asktheeu-theme/images/requests.png');*/
+		margin-left: 45px;
+		margin-top: 23px;
+		background-color: #FFF;
+	}
     .picture-frame img,
     .picture-frame iframe {
-        width: 420px;
-        height: 240px;
+        width: 200px;
+        
         margin: 15px;
     }
 
@@ -414,6 +628,7 @@ h3, h3 a {
     padding-top: 6px;
     padding-left: 35px;
     height: 30px;
+    float: left;
 }
     .link-arrow a {
         font-family: Helvetica, Arial;
@@ -438,13 +653,15 @@ a,
 .body_listing a, 
 .user_listing a {
     color: #009A9D;
-    text-decoration: none !important;
+    /*text-decoration: none !important;*/
 }
     a:hover,
     .request_listing a:hover, 
     .body_listing a:hover, 
-    .user_listing a:hover {
-        text-decoration: underline !important;
+    .user_listing a:hover 
+    {
+        /*text-decoration: underline !important;*/
+        /*color:#FFFFFF;*/
     }
 
 #header_left p,
@@ -465,8 +682,32 @@ a,
 form input[type="submit"], a.link_button_green, a.link_button_green_large {
     font-family: 'Open Sans', Helvetica, Arial;
     font-weight: 600;
+    margin-right: 63px;
+	margin-top: 5px;
+	margin-left: 64px;
+	padding: 10px 30px 10px 30px;
 }
 
+#nav_search_button{
+	float: left;
+	text-shadow: none !important;
+	border: medium none;
+	height: 30px;
+	width: 26px;
+	background: url('//s.w.org/wp-includes/images/admin-bar-sprite.png?d=20120831') no-repeat scroll 100% 2px;
+	border-radius: 0px;
+	padding: 0px;
+	top: -32px;
+	margin-left: 349px;
+	position: relative;
+	
+}
+.icon-search{
+	content: "\f002";
+   font-family: FontAwesome;}
+#navigation_search_query{
+	width: 340px;
+}
 form input[type="submit"] {
     padding: 0 11px;
 }
@@ -519,7 +760,7 @@ p.subtitle {
 p.public-body-name-prefix {
     font-family: Verdana, Helvetica, Arial;
     font-size: 14px;
-    margin-top: 0px;
+    margin-top: 22px;
     margin-bottom: -20px;
     color: #444444; /* XXX */
 }
@@ -695,10 +936,6 @@ TODO: Need to add states for
     background-image: url("/asktheeu-theme/images/states/icon_partially_successful.gif");
     color: #F19100;
 }
-.icon_incomplete {
-    background-image: url("/asktheeu-theme/images/states/icon_partially_successful.gif");
-    color: #F19100;
-}
 .icon_internal_review {
     background-image: url("/asktheeu-theme/images/states/icon_review_requested.gif");
     color: #009A9D;
@@ -763,11 +1000,21 @@ TODO: Need to add states for
 
 /** FOOTER **/
 #footer {
-    height: 90px;
-    margin: 0px;
-    border-top-width: 1px;
+    height: 136px;
+margin: 0 auto;
+border-top-width: 0px;
+background-color: #FFFFFF;
+border-color: #cdcdcd;
+width: 1060px;
+float: none;
 }
-
+#footer-detail{
+	width: 960px;
+	/*height:32px;*/
+	margin: 0 auto;
+	background-image: url("/asktheeu-theme/images/footer.png");
+	float:left;
+}
 #footer-inner {
     width: 960px;
     margin: auto;
@@ -822,4 +1069,138 @@ TODO: Need to add states for
     position: absolute;
     right: 0px;
     top: 30px;
+}
+
+#TopFollows{
+	font-family: 'Open Sans';
+	margin: 0px 12px;
+	border-bottom: 1px solid #D9D9D9;
+	padding-bottom: 12px;
+	}
+#TopFollows h1{
+	color: #E94E00;
+	text-decoration: none !important;
+}
+#TopFollows h1 a{
+	color: #E94E00;
+	text-decoration: none !important;
+}
+#frontpage-updates-requests {
+    width: 260px;
+    line-height: 1.1;
+}
+.tracking-links-frontpage {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial;
+    margin: 0px 12px;
+    
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 12px;
+}
+    .tracking-links-frontpage h4 {
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .tracking-links-frontpage.last {
+        border-bottom: 0px;
+    }
+
+.request-tracker-frontpage {
+    padding: 0px 12px 8px 12px;
+    border: 2px solid #ECECEC;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+    .request-tracker-frontpage .counter {
+      float: left;
+      width: 100px;
+      font-weight: 700;
+      font-size: 60px;
+      color: #3C3C3B;
+      text-align: right;
+    }
+    .request-tracker-frontpage .counter-label {
+      float: left;
+      width: 78px;
+      font-weight: 600;
+      font-size: 12px;
+      color: #6F6F6E;
+      line-height: 1.5;
+      padding-top: 14px;
+      padding-left: 6px;
+    }
+    .request-tracker-frontpage .track-button {
+      float: left;
+      font-weight: 700;
+      font-size: 13px;
+      color: #FFFFFF;
+      background-color: #009A9D;
+      padding: 8px 16px;
+      border-radius: 5px;
+      margin-left: 50px;
+    }
+    .request-tracker-frontpage .track-button a {
+        color: #FFFFFF;
+    }
+
+    .request-tracker-sidebar .counter {
+      float: left;
+      width: 100px;
+      font-weight: 700;
+      font-size: 60px;
+      color: #3C3C3B;
+      text-align: right;
+    }
+    .request-tracker-sidebar .counter-label {
+      float: left;
+      width: 78px;
+      font-weight: 600;
+      font-size: 12px;
+      color: #6F6F6E;
+      line-height: 1.5;
+      padding-top: 6px;
+      padding-left: 6px;
+    }
+    .request-tracker-sidebar .track-button {
+      float: left;
+      font-weight: 700;
+      font-size: 13px;
+      color: #FFFFFF;
+      background-color: #E84E00;
+      padding: 8px 16px;
+      border-radius: 5px;
+      margin-left: 0px;
+    }
+    .request-tracker-sidebar .track-button a {
+        color: #FFFFFF;
+    }
+
+.feed_form_frontpage p,
+.feed_form_sidebar p {
+    line-height: 1.5;
+}
+
+.request-tracker-frontpage form.feed_form input[type="submit"],
+.request-tracker-sidebar form.feed_form input[type="submit"] {
+    font-family: Verdana, 'Helvetica Neue', Arial;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1px 4px;
+}
+.counter{
+	float: left;
+	width: 100px;
+	font-weight: 700;
+	font-size: 60px;
+	color: #3C3C3B;
+	text-align: right;
+}
+.counter-label {
+    float: left;
+    width: 78px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #6F6F6E;
+    line-height: 1.5;
+    padding-top: 14px;
+    padding-left: 6px;
 }

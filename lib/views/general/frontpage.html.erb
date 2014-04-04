@@ -1,5 +1,44 @@
 <div id="frontpage-intro">
-    <p id="frontpage-lead"><%= _("You have the right to ask European Union bodies for information,<br/>"+
+   
+   <div id="intro-container">
+         
+	   <div id="intro-big">
+		
+                <iframe width="642px" height="363px" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;" 
+						src="http://www.youtube.com/embed/o_ciJTBJzag" frameborder="0" allowfullscreen>
+						
+						</iframe>
+            
+	   </div>
+	   <div id="intro-right-up">
+		<p class="search">SEARCH</p>
+		<p class="asktheeu">AsktheEU.org</p>
+		
+			<form id="navigation_search_form" action="/en/search/all" method="post">
+
+			<p>
+				<input id="navigation_search_query" type="text" placeholder="type your search term here" size="40" name="query"></input>
+				<i class="icon-search"><input id="nav_search_button" type="submit" value=""></input></i>
+			</p>
+
+			</form>
+	   </div>
+	   <div id="intro-right-down">
+		<div id="send">SEND</div>
+		<div id="arequest">A REQUEST</div>
+	   </div>
+      
+   </div>
+   
+	<div id="info-bar">
+	   <b>ASKTHEEU.ORG</b> IS AN ONLINE PLATFORM FOR CITIZENS TO SEND ACCESS TO DOCUMENTS REQUESTS DIRECTLY TO EU INSTITUTIONS
+	</div>
+   
+   
+   
+   
+   
+    <!--<p id="frontpage-lead"><%= _("THIS IS OUR SPECIAL TEMPLATE,<br/>"+
         "they are legally obliged to respond") %></p>
     
     <div id="frontpage-left-balloon">
@@ -25,39 +64,132 @@
             <span><%= link_to _("Search"), request_list_successful_url %></span>
         </div>
     </div>
-    
+    -->
     <div style="clear:both"></div>
 </div>
 
 <div id="frontpage-content">
     <div id="frontpage-inner-content">
         <div id="left-column">
-            <h1><%= link_to _("EU institutions"), body_index_path %></h1>
-            <div class="picture-frame">
-                <a href="<%= body_index_path %>">
-                <img src="/asktheeu-theme/images/front-picture-left.jpg" alt=""/>
-                </a>
+            
+            <h1><a href="<%= blog_url %>"><%= _("LATEST NEWS & CAMPAIGNS") %></a></h1>
+            <div id="sq1">
+				
+				<div class="part1">
+					<% item = @blog_items[0]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" width="278" height="128"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					</p>
+					<br>
+					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+				</div>
+				<br/><br/><br/>
+				<div class="part2">
+					<% item = @blog_items[2]; %>				
+					<p>					
+					<img style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" src="/asktheeu-theme/images/3.jpg" width="278" height="128"/>
+					<br>
+					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+				</div>
+				
             </div>
-            <%= render :partial => 'general/welcome_text' %>
-            <div id="follow-us-frame">
-                <p><%= _("Follow us") %></p>
-                <span><img src="/asktheeu-theme/images/facebook_icon.gif" alt=""/></span>
-                <span><img src="/asktheeu-theme/images/twitter_icon.gif" alt=""/></span>
+            <div id="sq2">
+				<div class="part1">
+					<% item = @blog_items[1]; %>				
+					<p>					
+					<img style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" src="/asktheeu-theme/images/2.jpg" width="278" height="128"/>
+					<br>
+					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+				</div>
+				<br/><br/><br/>
+				<div class="part2">
+					<% item = @blog_items[3]; %>				
+					<p>
+					<img style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" src="/asktheeu-theme/images/4.jpg" width="278" height="128"/>
+					<br>
+					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", 200) %></p>
+				</div>
             </div>
+             
+            
         </div>
         <div id="right-column">
-            <h1><%= _("Video") %></h1>
+            <h1><%= _("TOP REQUESTS") %></h1>
             <div class="picture-frame">
-                <iframe width="420" height="243" src="http://www.youtube-nocookie.com/embed/iMzYHoVdwSg?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+					
+																
+						 
+							
+					
+						
+						 
+						<!--<div id="TopFollows">
+							
+							<% info_request = InfoRequest.find_by_url_title!('dg_sanco_contacts_with_industry') %>
+							<h1><a href="#"><%= info_request.title %></a> </h1>
+							<div class="request-tracker-frontpage">
+								<% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", info_request.id]) + 1 %>
+								<div class="counter"><%= follower_count %></div>	
+								<div class="counter-label">People following this request </div>
+								 
+								
+								
+							</div>
+						</div> -->
+							 <%= render :partial => 'track/tracking_request_links', 
+										:locals => { 
+										:track_thing => TrackThing.create_track_for_request(info_request),
+										:own_request => info_request.user == @user,
+										:location => "frontpage"
+										} %>
+								<div style="clear:both"></div>			
+						
+						<% info_request = InfoRequest.find_by_url_title!('dg_trade_contacts_with_industry') %>
+						<% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", info_request.id]) + 1 %>
+						<%= render :partial => 'track/tracking_request_links', 
+										:locals => { 
+										:track_thing => TrackThing.create_track_for_request(info_request),
+										:own_request => info_request.user == @user,
+										:location => "frontpage"
+										} %>
+								<div style="clear:both"></div>
+								
+						<% info_request = InfoRequest.find_by_url_title!('publication_of_all_individual_pa') %>
+						<% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", info_request.id]) + 1 %>
+						<%= render :partial => 'track/tracking_request_links', 
+										:locals => { 
+										:track_thing => TrackThing.create_track_for_request(info_request),
+										:own_request => info_request.user == @user,
+										:location => "frontpage"
+										} %>
+								<div style="clear:both"></div>
+						
+  
+
+						
+						
+					<!--	<%= _("Search over<br/>
+								<strong>{{number_of_requests}} requests</strong> <span>and</span><br/>
+								<strong>{{number_of_authorities}} authorities</strong>",
+								:number_of_requests => InfoRequest.visible.count, :number_of_authorities => PublicBody.visible.count) %>-->			
             </div>
-            <h1><a href="<%= blog_url %>"><%= _("News") %></a></h1>
-            <% for item in @blog_items[0..2] %>
-            <p><%= simple_date(Time.parse(item['pubDate'][0])) %><br/>
-            <a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
-            </p>
-            <% end %>
-            <div class="link-arrow"><a href="<%= blog_url %>"><%= _("View all news") %></a></div>
+           
+            
         </div>
+        <div class="link-arrow"><a href="<%= blog_url %>"><%= _("View all news") %></a></div>
         <div style="clear:both"></div>
     </div>
 </div>
