@@ -4,10 +4,10 @@
 
     <% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", @info_request.id]) + 1 %>
     <p>
-      <%= n_("There is {{count}} person following this request",
-        "There are {{count}} people following this request",
-        follower_count,
-        :count => follower_count) %>
+		<div class="counter"><%= follower_count %></div>	
+		<div class="counter-label"> 
+			<%= n_("person following this request","people following this request") %>
+		</div>
     </p>
      <%= render :partial => 'track/tracking_links', :locals => { :track_thing => @track_thing, :own_request => @info_request.user && @info_request.user == @user, :location => 'sidebar' } %>
    </div>
@@ -38,7 +38,7 @@
     <div class="act_link">
         <% tweet_link = "https://twitter.com/share?" + {:url => request.url, :via => AlaveteliConfiguration::twitter_username, :text => "'#{@info_request.title}'", :related => _('alaveteli_foi:The software that runs {{site_name}}', :site_name => site_name)}.to_query %>
         <% link_to tweet_link do %>
-          <%= image_tag "twitter-16.png", :alt => "twitter icon" %>
+          <%= image_tag("twitter-16.png", :alt => "twitter icon") %>
         <% end %>
         <%= link_to _("Tweet this request"), tweet_link %>
     </div>

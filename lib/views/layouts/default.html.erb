@@ -14,15 +14,15 @@
 
         <%= render :partial => 'general/stylesheet_includes' %>
         <% if is_admin? %>
-          <%= stylesheet_link_tag "/admin/stylesheets/admin", :title => "Main", :rel => "stylesheet" %>
+          <%= stylesheet_link_tag "admin", :title => "Main", :rel => "stylesheet" %>
         <% end %>
 
-    	  <%= javascript_include_tag 'jquery.js', 'jquery-ui.min','jquery.cookie.js', 'general.js' %>    	
+        <%= javascript_include_tag "application" %>
         <% if @profile_photo_javascript %>
-            <script type="text/javascript" src="/javascripts/jquery.Jcrop.js"></script>
-            <script type="text/javascript" src="/javascripts/profile_photo.js"></script>
-            <link rel="stylesheet" href="/stylesheets/jquery.Jcrop.css" type="text/css" >
+            <%= javascript_include_tag "profile-photos" %>
+            <%= stylesheet_link_tag "jquery.Jcrop.css" %>
         <% end %>
+
         
         <% if @feed_autodetect %>
             <% for feed in @feed_autodetect %>
@@ -94,9 +94,9 @@
                 <% end %>
 
 
-              <%= link_to _("Sign out"), signout_path(:r => request.fullpath) %>
+              <%= link_to _("Log out"), signout_path(:r => request.fullpath) %>
           <% else %>
-              <%= link_to _("Sign in or sign up"), signin_path(:r => request.fullpath) %>
+              <%= link_to _("Log in | Sign up"), signin_path(:r => request.fullpath) %>
           <% end %>
           </div>
         <% end %>   

@@ -1,6 +1,6 @@
 <div class="view_html_prefix">
     <div class="view_html_logo">
-        <a href="/"><img src="/asktheeu-theme/images/logo.png" width="109" height="50" alt="<%= site_name %>"></a>
+        <a href="/"><%= image_tag("logo.png", :width => "109", :height => "50", :alt => site_name) %></a>
     </div>
     <div class="view_html_download_link">
         <%=link_to _("Download original attachment"), @attachment_url %> 
