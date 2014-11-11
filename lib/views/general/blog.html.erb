@@ -1,14 +1,146 @@
-<div id="main_content">
-<% @title = _("{{site_name}} blog and tweets", :site_name => site_name) %>
+<% @title = _("{{site_name}} ", :site_name => site_name) %>
+<div id="titleAbout">NEWS & CAMPAIGNS<!--<%=@title %>--></div>
+<div id="subtitleAbout">SUPPORT THE CAMPAIGNS</div>
 
-<% if !@twitter_user.empty? %>
+<div id="main_content">
+
+
+   
+  <div id="blog">
+	<div id="sq1">
+				
+				 <div class="part1">
+					<% item = @blog_items[0]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div> 
+				<!--<div class="part1">
+					<% item = @blog_items[0]; %>				
+					<p>					
+                                        <%= image_tag('2.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "250", :height => "150") %>
+					<br>
+					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div>				
+				
+				--><br/><br/><br/>
+				<div class="part2">
+					<% item = @blog_items[1]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div>
+				
+				<div class="part3">
+					<% item = @blog_items[2]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div>
+	<div id="subtitleNews">TAKE A LOOK AT THE NEWS</div>			
+				
+            </div>
+
+          	<div id="sq1">
+				
+				 <div class="part1">
+					<% item = @blog_items[3]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div> 
+				<!--<div class="part1">
+					<% item = @blog_items[0]; %>				
+					<p>					
+                                        <%= image_tag('2.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "250", :height => "150") %>
+					<br>
+					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div>				
+				
+				--><br/><br/><br/>
+				<div class="part2">
+					<% item = @blog_items[4]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div>
+				
+				<div class="part3">
+					<% item = @blog_items[5]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div>			
+				
+            </div>
+  
+</div>
+<!--<% if !@twitter_user.empty? %>
 <div id="header_right">
   <div class="act_link">
     <h2><%= _("Stay up to date") %></h2>
     <%= image_tag("twitter-16.png", :alt => "twitter icon", :class => "twitter-icon") %> <a href="http://www.twitter.com/<%= MySociety::Config.get('TWITTER_USERNAME') %>"><%= _("Follow us on twitter") %></a><br/><br/>
     <%= image_tag("feed-16.png", :alt => "RSS icon", :valign => "middle") %> <a href="<%= MySociety::Config.get('BLOG_FEED') %>"><%= _("Subscribe to blog") %></a>
   </div>
-  <div id="twitter">
+ <div id="twitter">
   <script src="http://widgets.twimg.com/j/2/widget.js"></script>
   <script type="text/javascript">
   new TWTR.Widget({
@@ -44,20 +176,4 @@
 </div>
 <% end %>
 
-<div id="header_left">
-  <h1><%=@title %></h1>
- 
-  <div id="blog">
-    <% for item in @blog_items %>
-      <div class="blog_post">
-          <h2 id="<%= Time.parse(item['pubDate'][0]).to_i %>"><%= item['title'].first %></h2>
-          <div><%= raw(item['encoded'].first) %></div>
-          <p class="subtitle"><%= _("Posted on {{date}} by {{author}}", :date=>simple_date(Time.parse(item['pubDate'][0])), :author=>item['creator'].first) %></p>
-          <br/>
-          <br/>
-      </div>
-    <% end %>
-  </div>
-</div>
-
-</div>
+</div>-->

@@ -1,48 +1,52 @@
-<% @title = "About" %>
+﻿<% @title = "About" %>
+<div id="titleAbout">ABOUT</div>
+<div id="subtitleAbout">WELCOME TO ASKTHEEU.ORG!</div>
+<div id="contentAbout">
+	<%= render :partial => 'sidebar' %>
 
-<%= render :partial => 'sidebar' %>
+	<div id="left_column_flip">
+	    
+	   <!-- <h3><a href="#welcome">Welcome to AsktheEU.org!</a></h3>
+	    <h3><a href="#how">How Does It Work?</a></h3>
+	    <h3><a href="#users">Who can use AsktheEU.org?</a></h3>
+	    <h3><a href="#who">Who built AsktheEU.org?</a></h3>
+	    <h3><a href="#funders">Who is funding AsktheEU.org?</a></h3>
+	    <h3><a href="#supporters">AsktheEU.org Supporters</a></h3>
+	    <h3><a href="#ip">Intellectual Property</a></h3> -->
 
-<div id="left_column_flip">
-    <h1>About</h1>
-    <h3><a href="#welcome">Welcome to AsktheEU.org!</a></h3>
-    <h3><a href="#how">How Does It Work?</a></h3>
-    <h3><a href="#users">Who can use AsktheEU.org?</a></h3>
-    <h3><a href="#who">Who built AsktheEU.org?</a></h3>
-    <h3><a href="#funders">Who is funding AsktheEU.org?</a></h3>
-    <h3><a href="#supporters">AsktheEU.org Supporters</a></h3>
-    <h3><a href="#ip">Intellectual Property</a></h3>
+	    <h2 id="welcome">Welcome to AsktheEU.org!</h2>
+	    <p>AsktheEU.org is not an official EU body. It has been built by civil society organizations to help members of the public like you get the information you want about the European Union. It is as easy as asking a question.</p>
+	    <p>This website will also make life easier for EU public officials because they will be less likely to have to answer repeated requests about the same subject: once a question has been answered everyone will be able to find the information stored on this website.</p>
+	    
+	    <h2 id="how">How does it work?</h2>
+	    <p>It’s very simple: you file a request with the EU via this website. YOu email is automatically sent to the correct EU body. They have the obligation to answer within 15 working days (about three weeks).</p>
+	    <p>When the EU replies to your request, it gets published on this website and you get a notification. You get to say whether or not you are happy with the answer, to follow up for more information, or to file a confirmatory application (EU jargon meaning an appeal).</p>
+	    <p>Everyone else gets to see the correspondence and that way they don’t need to ask the same question again.</p>
+	    
+	    <h2 id="users">Who can use AsktheEU.org?</h2>
+	    <p>Civil society organisations, journalists, students and academics, whistleblowers and businesses might be especially interested in using the website to obtain information from the EU to carry out their work..or you might be a curious citizen! Every one of the 500 million people living in the European Union (both citizens and residents) has the legally guaranteed right to ask for documents from EU bodies.</p>
+	    
+	    <p><strong>Don’t delay: ask a question today!</strong></p>
+	    
+	    <h2 id="who">Who built AsktheEU.org?</h2>
+	    <p>AsktheEU.org is a project of <a href="http://www.access-info.org/">Access Info Europe</a>, a human rights organisation based in Madrid, and is based on <a href="http://www.mysociety.com/">mySociety</a>'s successful UK website <a href="http://WhatDoTheyKnow.com">WhatDoTheyKnow.com</a>.</p>
+	    <p>The Alaveteli software has been used in many other countries including Spain where Access Info Europe runs <a href="http://tuderechoasaber.es/">TuDerechoaSaber.es</a> together with <a href="http://Www.civio.es">Fundación Ciudadana Civio</a>.</p>
+	    
+	    <p>Access Info Europe is a not-for-profit human rights organisation registered in Spain with the Ministry of Interior (reference 587828) and with the <a href="http://europa.eu/transparency-register/index_en.htm">EU’s Transparency Register</a> (reference 49931835063-67).</p>
+	    <p>The AsktheEU.org project is supported by <%= link_to 'a number of European and international organisations', help_credits_path %>.</p>
+	      
+	    
+	    
+	    <h2 id="funders">Who is funding AsktheEU.org?</h2>
+	    <p>AsktheEU.org is funded primarily by the Open Society Foundation. We still need more funds and volunteers to keep it running. <a href="http://www.access-info.org/en/support-us">Support Access Info Europe</a>.</p>
 
-    <h2 id="welcome">Welcome to AsktheEU.org!</h2>
-    <p>This website has been built by civil society organizations to help members of the public like you get the information you want about the European Union – by asking for it.</p>
-    <p>This website will also make life easier for EU public officials because they will be less likely to have to answer repeated requests about the same subject: once a question has been answered everyone will be able to find the information stored on this website.</p>
-    
-    <h2 id="how">How does it work?</h2>
-    <p>It’s very simple: you file a request with the EU via this website. We send an email to the correct EU body. They have the obligation to answer within 15 working days (about three weeks).</p>
-    <p>When we get an answer, we send it to you and we publish it on this website. You get to say whether or not you are happy with the answer, to follow up for more information, or to file an appeal.</p>
-    <p>Everyone else gets to see your answer and that way they don’t need to ask the same question again.</p>
-    
-    <h2 id="users">Who can use AsktheEU.org?</h2>
-    <p>Every one of the 500 million people living in the European Union (both citizens and residents) has the legally guaranteed right to ask for information from EU bodies.</p>
-    <p>People living outside the EU can also ask for information (you just don’t have the same right of appeal to the European Courts if they refuse). You could, however, make a complaint to the European Ombudsman, who will accept both EU and non-EU complainants.</p>
-    <p>NGOs and Businesses (known as “legal persons”) can also submit requests for documents. If you are registered in an EU country you also have the right of appeal to the European Courts.</p>
-    <p>You might be especially interested in using this website if you work for an NGO, are a journalist, are involved with a local citizens group, are a student or an academic, are a lawyer or a businessperson ... or if you are just curious to know more about the EU and how it works. <strong>Don’t delay: ask a question today!</strong></p>
-    
-    <h2 id="who">Who built AsktheEU.org?</h2>
-    <p>AsktheEU.org is a project of the international human rights organisation <a href="http://www.access-info.org/">Access Info Europe</a>, based in Madrid, and was developed with software by the organisation <a href="http://www.mysociety.com/">mySociety</a>, based in London.</p>
-    <p>Access Info Europe is a not-for-profit human rights organisation registered in Spain with the Ministry of Interior (reference 587828) and with the <a href="http://europa.eu/transparency-register/index_en.htm">EU’s Transparency Register</a> (reference 49931835063-67).</p>
-    <p>The AsktheEU.org project is supported by <%= link_to 'a coalition of European and international organisations', help_credits_path %>.</p>
-    <p>AsktheEU.org is based on mySociety’s successful UK website <a href="http://WhatDoTheyKnow.com">WhatDoTheyKnow.com</a>. Another similar website is <a href="http://FragdenStaat.de">FragdenStaat.de</a> in Germany.</p>  
-    <p>In Spain Access Info Europe has launched <a href="http://tuderechoasaber.es/">TuDerechoaSaber.es</a> together with some other civil society organisations and technology for transparency groups in Spain.</p>
-    
-    <h2 id="funders">Who is funding AsktheEU.org?</h2>
-    <p>AsktheEU.org was funded by the Open Society Foundation in the first phase of development. We still need more funds and volunteers to keep it running. <a href="http://www.access-info.org/en/support-us">Support Access Info Europe</a>.</p>
+	    <h2 id="supporters">AsktheEU.org Supporters</h2>
+	    <p>The following organisations form part of the AsktheEU Advisory Group:
+		<%= render :partial => 'help/supporters' %>
+	    </p>
 
-    <h2 id="supporters">AsktheEU.org Supporters</h2>
-    <p>The following organisations form part of the AsktheEU Advisory Group:
-        <%= render :partial => 'help/supporters' %>
-    </p>
-
-    <h2 id="ip">Intellectual Property</h2>
-    <p>This website is part of the <a href="http://www.alaveteli.org/">Alaveteli</a> Project – an open source software development being run by <a href="http://www.mysociety.org/">mySociety</a> in collaboration with <a href="http://www.access-info.org">Access Info Europe</a> and other civil society organisations. The other original content of this website was developed by Access Info Europe and is made public under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution, Share Alike licence</a>.
-    </p>
+	    <h2 id="ip">Intellectual Property</h2>
+	    <p>This website is part of the <a href="http://www.alaveteli.org/">Alaveteli</a> Project – an open source software development being run by <a href="http://www.mysociety.org/">mySociety</a> in collaboration with <a href="http://www.access-info.org">Access Info Europe</a> and other civil society organisations. The other original content of this website was developed by Access Info Europe and is made public under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution, Share Alike licence</a>.
+	    </p>
+	</div>
 </div>

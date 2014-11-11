@@ -10,7 +10,7 @@
         <% end %>
         </title>
 
-        <link rel="shortcut icon" href="/asktheeu-theme/images/favicon.ico"> <!-- XXX -->
+        <%= render :partial => 'layouts/favicon' %>
 
         <%= render :partial => 'general/stylesheet_includes' %>
         <% if is_admin? %>
@@ -42,7 +42,14 @@
 
         <%= render :partial => 'general/before_head_end' %>
     </head>
-    <body class="<%= 'front' if params[:action] == 'frontpage' %>">
+	<% if params[:action] == 'frontpage' %>
+		<body class="front">	
+	<% else %>
+		<body class="general">
+	<% end %>
+
+	
+    <!--<body class="<%= 'front' if params[:action] == 'frontpage' %>">-->
     <% if AlaveteliConfiguration::force_registration_on_new_request && !@user %>
     <%= javascript_include_tag 'jquery.fancybox-1.3.4.pack' %>
     <script type="text/javascript">
@@ -124,7 +131,7 @@
                 <div id="error"><%= flash[:error] %></div>
             <% end %>
 
-            <div id="<%= controller.controller_name + "_" + controller.action_name %>" class="controller_<%= controller.controller_name %>">
+            
             <%= yield :layout %>
             </div>
             <div style="clear:both"></div>
