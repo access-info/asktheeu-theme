@@ -3,12 +3,10 @@
    <div id="intro-container">
          
 	   <div id="intro-big">
-		
-                <iframe width="642px" height="363px" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;" 
-						src="http://www.youtube.com/embed/o_ciJTBJzag" frameborder="0" allowfullscreen>
+		<iframe width="642px" height="363px" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px;  border-bottom-right-radius: 8px;" 
+						src="http://www.youtube.com/embed/0NBuYOPZn_4 " frameborder="0" allowfullscreen>
 						
-						</iframe>
-            
+						</iframe>           
 	   </div>
 	   <div id="intro-right-up">
 		<p class="search">SEARCH</p>
@@ -24,8 +22,8 @@
 			</form>
 	   </div>
 	   <div id="intro-right-down">
-		<div id="send">SEND</div>
-		<div id="arequest">A REQUEST</div>
+		<div id="send"><%= link_to _("SEND"), body_index_path, :class => 'make-request-link' %></div>
+		<div id="arequest"><%= link_to _("A REQUEST"), body_index_path, :class => 'make-request-link' %></div>
 	   </div>
       
    </div>
@@ -75,53 +73,98 @@
             <h1><a href="<%= blog_url %>"><%= _("LATEST NEWS & CAMPAIGNS") %></a></h1>
             <div id="sq1">
 				
-				<div class="part1">
+				 <div class="part1">
 					<% item = @blog_items[0]; %>					
 					<p>
 					<% if item['thumbnail']  %>
 						
-						<img <%= item['thumbnail'].to_s.html_safe %> style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" width="278" height="128"/>
+						<img <%= item['thumbnail'].to_s.html_safe %> style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" width="250" height="150"/>
 					<% else %>
 						<p>NO THUMBNAIL</p>					
 					<% end %>
-					</p>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div> 
+				<!--<div class="part1">
+					<% item = @blog_items[0]; %>				
+					<p>					
+                                        <%= image_tag('2.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "250", :height => "150") %>
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
 					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
-				</div>
+				</div>				
 				<br/><br/><br/>
 				<div class="part2">
 					<% item = @blog_items[2]; %>				
 					<p>					
-                                        <%= image_tag('3.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "278", :height => "128") %>
+                                        <%= image_tag('4.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "250", :height => "150") %>
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
 					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
-				</div>
+				</div>--><br/><br/><br/>
+<div class="part2">
+					<% item = @blog_items[2]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div> 
 				
             </div>
             <div id="sq2">
 				<div class="part1">
-					<% item = @blog_items[1]; %>				
-					<p>					
-                                        <%= image_tag('2.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "278", :height => "128") %>
+					<% item = @blog_items[1]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
 					<br>
-					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
 					<br/>
 					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
 				</div>
 				<br/><br/><br/>
-				<div class="part2">
+				<!--<div class="part2">
 					<% item = @blog_items[3]; %>				
 					<p>
-                                        <%= image_tag('4.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "278", :height => "128") %>
+                                        <%= image_tag('2.jpg', :style => "border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;", :width => "250", :height => "150") %>
 					<br>
 					<a href='<%= "#{blog_url}\##{Time.parse(item['pubDate'][0]).to_i}" %>'><%= item['title'][0] %></a>
 					<br/>
 					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
-				</div>
+				</div>-->
+<div class="part2">
+					<% item = @blog_items[3]; %>					
+					<p>
+					<% if item['thumbnail']  %>
+						
+						<img <%= item['thumbnail'].to_s.html_safe %> style="border:1px solid #B2DCDE; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px;  border-bottom-right-radius: 5px;" width="250" height="150"/>
+					<% else %>
+						<p>NO THUMBNAIL</p>					
+					<% end %>
+					
+					<br>
+					<a href='<%= item['link'] %>'><%= item['title'][0] %></a>
+					<br/>
+					<p><%= h excerpt(item['description'][0].to_s, "", :radius => 200) %></p>
+				</div> 
             </div>
              
             
@@ -149,6 +192,8 @@
 								
 							</div>
 						</div> -->
+						<% info_request = InfoRequest.find(1421) %>
+						<% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", info_request.id]) + 1 %>
 							 <%= render :partial => 'track/tracking_request_links', 
 										:locals => { 
 										:track_thing => TrackThing.create_track_for_request(info_request),
@@ -157,7 +202,7 @@
 										} %>
 								<div style="clear:both"></div>			
 						
-						<% info_request = InfoRequest.find_by_url_title!('dg_trade_contacts_with_industry') %>
+						<% info_request = InfoRequest.find(235) %>
 						<% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", info_request.id]) + 1 %>
 						<%= render :partial => 'track/tracking_request_links', 
 										:locals => { 
@@ -165,23 +210,9 @@
 										:own_request => info_request.user == @user,
 										:location => "frontpage"
 										} %>
-								<div style="clear:both"></div>
-								
-						<% info_request = InfoRequest.find_by_url_title!('publication_of_all_individual_pa') %>
-						<% follower_count = TrackThing.count(:all, :conditions => ["info_request_id = ?", info_request.id]) + 1 %>
-						<%= render :partial => 'track/tracking_request_links', 
-										:locals => { 
-										:track_thing => TrackThing.create_track_for_request(info_request),
-										:own_request => info_request.user == @user,
-										:location => "frontpage"
-										} %>
-								<div style="clear:both"></div>
-						
-  
+								<div style="clear:both"></div>	
 
-						
-						
-					<!--	<%= _("Search over<br/>
+<!--	<%= _("Search over<br/>
 								<strong>{{number_of_requests}} requests</strong> <span>and</span><br/>
 								<strong>{{number_of_authorities}} authorities</strong>",
 								:number_of_requests => InfoRequest.visible.count, :number_of_authorities => PublicBody.visible.count) %>-->			
@@ -189,7 +220,7 @@
            
             
         </div>
-        <div class="link-arrow"><a href="<%= blog_url %>"><%= _("View all news") %></a></div>
+        <div class="link-arrow"><a href="<%= blog_url %>"><%= _("View all news & campaigns") %></a></div>
         <div style="clear:both"></div>
     </div>
 </div>

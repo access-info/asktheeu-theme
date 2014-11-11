@@ -1,24 +1,37 @@
 <div id="footer">
     <div id="footer-inner">
-        <a id="access-info-logo"
-           href="http://www.access-info.org/"><%= image_tag("access_info_logo.gif", :alt => "Access Info icon") %></a>
+	<div id="fCaja1"><p><%= _("A PROJECT BY <br /> <a href='http://www.access-info.org/'>ACCESS INFO EUROPE</a>")%><br /><%= link_to _("Contact"), help_contact_url %></p></div>
+	
+        <div id="fCaja2"><a id="access-info-logo" href="http://www.access-info.org/"><%= image_tag("access_info_logo.gif", :alt => "Access Info icon") %></a></div>
+        <div id="fCaja3">
+		<p><%= _("Cava de San Miguel 8, 4º centro. 28005 Madrid (Spain) 
+			<br /> <br /> 
+			<a href='mailto:info@access-info.org'>info@access-info.org</a>
+			<br /><br /> 
+			Office numbers (10-19 hrs CET):<br />
+			+34 91 365 65 58 <br />
+			out of hours mobile (any time):<br />
+			+34 667 685 319
+		")%></p>
+	</div>
         
-          
-        
-        
-        
-        <div id="footer-links">
+        <!--<div id="footer-links">
             <ul>
                 <li><a href="http://www.access-info.org/en/help-desk"><%= _("Help Desk") %></a></li>
                 <li><%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %></li>
             </ul>
-        </div>
-
+        </div>-->
+	
+	<div id="fCaja4"><%= _("ABOUT <a href='http:///www.alaveteli.org/'>ALAVETELI</a> PROGRAMMER'S API CREDITS")%></div>
+	<div id="fCaja5"><a id="creative-commons-logo" href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="Creative Commons icon"></a></div>
         <div id="credits">
-            <p><%= _("This website is powered by <a href='http://www.alaveteli.org/'>Alaveteli</a>. Other original content was developed by Access Info Europe and is made public under a <a  href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution, Share Alike licence</a>.") %></p>
-            <a id="creative-commons-logo" href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="Creative Commons icon"></a>
+            <p><%= _("This website is powered by <a href='http://www.alaveteli.org/'>Alaveteli</a>. Other original content was developed by Access Info Europe and is made public under a <a  href='http://creativecommons.org/licenses/by-sa/3.0/'>Creative Commons Attribution, Share Alike licence</a>.") %></p>            
         </div>
-        <div id="footer-detail"></>
+        <div id="footer-detail"></div>
         <div style="clear:both"></div>
+	
     </div>
+	
+<!-- <%= image_tag("down_bar.png", :alt => "bar") %> -->
 </div>
+<div class="footer-fin"></div>	
